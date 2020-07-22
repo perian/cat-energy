@@ -1,3 +1,21 @@
 .program {
   background-color: $basic-grey;
 }
+
+.program__title {
+  font-weight: 400;
+  color: $black;
+  text-transform: uppercase;
+
+  @include oswald;
+  @include font-size(24px, 37px);
+}
+
+.program__link {
+  color: $black;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  @include oswald;
+  @include font-size(16px);
+}

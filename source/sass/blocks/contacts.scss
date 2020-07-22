@@ -1,0 +1,11 @@
+.contacts__invitation {
+  color: $special-black;
+  text-transform: uppercase;
+
+  @include oswald;
+  @include font-size(16px, 18px);
+}
+
+.contacts__address {
+  line-height: 20px;
+}
