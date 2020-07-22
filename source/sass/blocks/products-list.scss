@@ -1,5 +1,25 @@
 .products-list {
+  margin: 0;
+  padding: 0;
+
   list-style: none;
+
+  outline: 3px solid yellow;
+}
+
+.products-list__item {
+  padding-top: 11px;
+  padding-bottom: 14px;
+
+  outline: 3px solid green;
+
+  &:not(last-child) {
+    margin-bottom: 19px;
+  }
+
+  &--add {
+    margin-top: 37px;
+  }
 }
 
 .products-list__link {

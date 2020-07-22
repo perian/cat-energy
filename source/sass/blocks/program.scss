@@ -1,5 +1,13 @@
 .program {
+  margin-bottom: 20px;
+  padding: 30px 33px 18px 20px;
+
   background-color: $basic-grey;
+  outline: 3px solid yellow;
+
+  &:last-child {
+    margin-bottom: 27px;
+  }
 }
 
 .program__title {
