@@ -1,0 +1,26 @@
+.form {
+  text-transform: uppercase;
+
+  @include oswald;
+}
+
+.form__intro {
+  color: $black;
+}
+
+.form__legend {
+  color: $black;
+  text-transform: none;
+
+  @include font-size(24px, 26px);
+}
+
+.form__textarea {
+  text-transform: uppercase;
+}
+
+.form__text {
+  line-height: 16px;
+  color: $black;
+  text-transform: none;
+}
