@@ -1,0 +1,77 @@
+.products-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  outline: 3px solid yellow;
+}
+
+.products-list__item {
+  padding-top: 11px;
+  padding-bottom: 14px;
+
+  outline: 3px solid green;
+
+  &:not(:last-child) {
+    margin-bottom: 19px;
+  }
+
+  &--add {
+    margin-top: 37px;
+  }
+}
+
+.products-list__link {
+  color: $special-dark-grey-2;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  @include oswald;
+  @include font-size(16px, 20px);
+}
+
+.products-list__img {
+  &--chicken {
+    background-color: #f0b22e;
+  }
+
+  &--chicken-big {
+    background-color: #f0b22e;
+  }
+
+  &--fish {
+    background-color: #87ce21;
+  }
+
+  &--fish-big {
+    background-color: #87ce21;
+  }
+
+  &--buckwheat {
+    background-color: #6cc5f6;
+  }
+
+  &--buckwheat-big {
+    background-color: #6cc5f6;
+  }
+
+  &--rice {
+    background-color: #c99cf8;
+  }
+}
+
+.products-list__data {
+  list-style: none;
+  color: $special-dark-grey;
+
+  @include font-size(12px, 16px);
+}
+
+.products-list__show-more {
+  color: $special-black;
+  text-transform: uppercase;
+
+  @include oswald;
+  @include font-size(16px, 20px);
+}

@@ -1,0 +1,21 @@
+.site-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+  text-align: center;
+}
+
+.site-list__link {
+  text-align: center;
+  color: $black;
+  text-decoration: none;
+
+  &:hover {
+    color: $main-menu-hover;
+  }
+
+  &:active {
+    color: $main-menu-active;
+  }
+}

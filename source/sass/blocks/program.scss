@@ -1,0 +1,29 @@
+.program {
+  margin-bottom: 20px;
+  padding: 30px 33px 18px 20px;
+
+  background-color: $basic-grey;
+  outline: 3px solid yellow;
+
+  &:last-child {
+    margin-bottom: 27px;
+  }
+}
+
+.program__title {
+  font-weight: 400;
+  color: $black;
+  text-transform: uppercase;
+
+  @include oswald;
+  @include font-size(24px, 37px);
+}
+
+.program__link {
+  color: $black;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  @include oswald;
+  @include font-size(16px);
+}

@@ -1,0 +1,7 @@
+.title {
+  font-weight: 400;
+  color: $black;
+
+  @include oswald;
+  @include font-size(36px, 40px);
+}

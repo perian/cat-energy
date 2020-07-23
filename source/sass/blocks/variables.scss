@@ -1,0 +1,28 @@
+// colors
+$white: #ffffff;
+$black: #000000;
+$special-black: #111111;
+$basic-green: #68b738;
+$basic-green-2: #5eaa2f;
+$basic-grey: #f2f2f2;
+$basic-grey-2: #ebebeb;
+$basic-grey-3: #eaeaea;
+$special-grey: #cdcdcd;
+$special-grey-2: #666666;
+$special-grey-3: #c4c4c4;
+$special-dark-grey: #444444;
+$special-dark-grey-2: #222222;
+$status-error: #ff8282;
+
+//style-guide main-menu
+$main-menu: $black;
+$main-menu-hover: rgba($main-menu, 0.6);
+$main-menu-active: rgba($main-menu, 0.3);
+$main-menu-alt: $white;
+$main-menu-alt-hover: rgba($main-menu-alt, 0.6);
+$main-menu-alt-active: rgba($main-menu-alt, 0.3);
+
+// shadows
+$shadow-normal: 0 1px 3px rgba(0, 0, 0, 0.16);
+$shadow-hover: 0 4px 4px rgba(0, 0, 0, 0.25);
+$shadow-pressed: 0 5px 3px rgba(0, 0, 0, 0.2);

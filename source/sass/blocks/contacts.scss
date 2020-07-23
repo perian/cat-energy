@@ -1,0 +1,18 @@
+.contacts {
+  padding-top: 28px;
+  padding-bottom: 22px;
+
+  outline: 3px solid yellow;
+}
+
+.contacts__invitation {
+  color: $special-black;
+  text-transform: uppercase;
+
+  @include oswald;
+  @include font-size(16px, 18px);
+}
+
+.contacts__address {
+  line-height: 20px;
+}
