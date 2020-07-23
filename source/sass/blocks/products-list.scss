@@ -13,7 +13,7 @@
 
   outline: 3px solid green;
 
-  &:not(last-child) {
+  &:not(:last-child) {
     margin-bottom: 19px;
   }
 
