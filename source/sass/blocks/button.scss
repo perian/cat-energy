@@ -1,4 +1,6 @@
 .button {
+  display: grid;
+
   text-align: center;
   color: $white;
   text-transform: uppercase;
@@ -7,5 +9,5 @@
   background-color: $basic-green;
 
   @include oswald;
-  @include font-size(16px, 0);
+  @include font-size(16px);
 }
