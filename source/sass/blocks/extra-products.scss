@@ -1,0 +1,31 @@
+.extra-products__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.extra-products__item-title {
+  color: $black;
+  text-transform: uppercase;
+
+  @include oswald;
+  @include font-size(16px);
+}
+
+.extra-products__item-info {
+  line-height: 14px;
+}
+
+.extra-products__gift {
+  background-color: $basic-grey;
+  background-image: url("../../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+}
+
+.extra-products__gift-desc {
+  text-align: center;
+  color: $white;
+
+  @include font-size(16px, 20px);
+}
