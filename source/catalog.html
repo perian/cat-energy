@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html class="page" lang="ru" dir="ltr">
   <head>
-    <meta charset="utf-8">
     <title>Cat energy</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="./sass/global/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body class="page-body">
     <header class="page-header">
-      <nav class="main-nav">
-        <div class="main-nav__wrapper">
+      <div class="wrapper">
+        <nav class="main-nav">
           <button class="main-nav__toggle" type="button" name="close-button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
@@ -22,35 +23,35 @@
             </a>
           </div>
           <ul class="main-nav__list site-list visually-hidden">
-            <li class="site-list__item">
-              <a class="site-list__link" href="index.html">
+            <li class="main-nav__item site-list__item">
+              <a class="main-nav__link site-list__link" href="index.html">
                 Главная
               </a>
             </li>
-            <li class="site-list__item  site-list__item--current">
-              <a class="site-list__link">
+            <li class="main-nav__item site-list__item site-list__item--current">
+              <a class="main-nav__link site-list__link">
                 Каталог продукции
               </a>
             </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="form.html">
+            <li class="main-nav__item site-list__item">
+              <a class="main-nav__link site-list__link" href="form.html">
                 Подбор программы
               </a>
             </li>
           </ul>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </header>
 
     <main class="page-main">
       <div class="wrapper">
         <section class="catalog">
-          <h2 class="title  catalog__title">Каталог продукции</h2>
+          <h2 class="title catalog__title">Каталог продукции</h2>
           <ul class="products-list">
             <li class="products-list__item">
               <div class="products-list__image">
                 <a class="products-list__link" href="chicken.html">
-                  <img class="products-list__img  products-list__img--chicken" src="https://via.placeholder.com/68x86" width="68" height="86" alt="Оранжевая банка c кормом для набора веса, со вкусом курицы.">
+                  <img class="products-list__img products-list__img--chicken" src="https://via.placeholder.com/68x86" width="68" height="86" alt="Оранжевая банка c кормом для набора веса, со вкусом курицы.">
                 </a>
               </div>
               <div class="products-list__info">
@@ -80,12 +81,12 @@
                   </li>
                 </ul>
               </div>
-              <a class="button  catalog__button" href="order.html">Заказать</a>
+              <a class="button catalog__button" href="order.html">Заказать</a>
             </li>
             <li class="products-list__item">
               <div class="products-list__image">
                 <a class="products-list__link" href="chicken.html">
-                  <img class="products-list__img  products-list__img--chicken-big" src="https://via.placeholder.com/84x100" width="84" height="100" alt="Оранжевая банка c кормом для набора веса, со вкусом курицы.">
+                  <img class="products-list__img products-list__img--chicken-big" src="https://via.placeholder.com/84x100" width="84" height="100" alt="Оранжевая банка c кормом для набора веса, со вкусом курицы.">
                 </a>
               </div>
               <div class="products-list__info">
@@ -113,12 +114,12 @@
                   </li>
                 </ul>
               </div>
-              <a class="button  catalog__button" href="order.html">Заказать</a>
+              <a class="button catalog__button" href="order.html">Заказать</a>
             </li>
             <li class="products-list__item">
               <div class="products-list__image">
                 <a class="products-list__link" href="fish.html">
-                  <img class="products-list__img  products-list__img--fish" src="https://via.placeholder.com/68x86" width="68" height="86" alt="Зеленая банка c кормом для набора веса, со вкусом рыбы.">
+                  <img class="products-list__img products-list__img--fish" src="https://via.placeholder.com/68x86" width="68" height="86" alt="Зеленая банка c кормом для набора веса, со вкусом рыбы.">
                 </a>
               </div>
               <div class="products-list__info">
@@ -148,12 +149,12 @@
                   </li>
                 </ul>
               </div>
-              <a class="button  catalog__button" href="order.html">Заказать</a>
+              <a class="button catalog__button" href="order.html">Заказать</a>
             </li>
             <li class="products-list__item">
               <div class="products-list__image">
                 <a class="products-list__link" href="fish.html">
-                  <img class="products-list__img  products-list__img--fish-big" src="https://via.placeholder.com/84x100" width="84" height="100" alt="Зеленая банка c кормом для набора веса, со вкусом рыбы.">
+                  <img class="products-list__img products-list__img--fish-big" src="https://via.placeholder.com/84x100" width="84" height="100" alt="Зеленая банка c кормом для набора веса, со вкусом рыбы.">
                 </a>
               </div>
               <div class="products-list__info">
@@ -181,12 +182,12 @@
                   </li>
                 </ul>
               </div>
-              <a class="button  catalog__button" href="order.html">Заказать</a>
+              <a class="button catalog__button" href="order.html">Заказать</a>
             </li>
             <li class="products-list__item">
               <div class="products-list__image">
                 <a class="products-list__link" href="buckwheat.html">
-                  <img class="products-list__img  products-list__img--buckwheat" src="https://via.placeholder.com/68x86" width="68" height="86" alt="Синяя банка c кормом для похудения, со вкусом гречки.">
+                  <img class="products-list__img products-list__img--buckwheat" src="https://via.placeholder.com/68x86" width="68" height="86" alt="Синяя банка c кормом для похудения, со вкусом гречки.">
                 </a>
               </div>
               <div class="products-list__info">
@@ -214,12 +215,12 @@
                   </li>
                 </ul>
               </div>
-              <a class="button  catalog__button" href="order.html">Заказать</a>
+              <a class="button catalog__button" href="order.html">Заказать</a>
             </li>
             <li class="products-list__item">
               <div class="products-list__image">
                 <a class="products-list__link" href="buckwheat.html">
-                  <img class="products-list__img  products-list__img--buckwheat-big" src="https://via.placeholder.com/84x100" width="84" height="100" alt="Синяя банка c кормом для похудения, со вкусом гречки.">
+                  <img class="products-list__img products-list__img--buckwheat-big" src="https://via.placeholder.com/84x100" width="84" height="100" alt="Синяя банка c кормом для похудения, со вкусом гречки.">
                 </a>
               </div>
               <div class="products-list__info">
@@ -247,12 +248,12 @@
                   </li>
                 </ul>
               </div>
-              <a class="button  catalog__button" href="order.html">Заказать</a>
+              <a class="button catalog__button" href="order.html">Заказать</a>
             </li>
             <li class="products-list__item">
               <div class="products-list__image">
                 <a class="products-list__link" href="rice.html">
-                  <img class="products-list__img  products-list__img--rice" src="https://via.placeholder.com/68x86" width="68" height="86" alt="Фиолетовая банка c кормом для похудения, со вкусом риса.">
+                  <img class="products-list__img products-list__img--rice" src="https://via.placeholder.com/68x86" width="68" height="86" alt="Фиолетовая банка c кормом для похудения, со вкусом риса.">
                 </a>
               </div>
               <div class="products-list__info">
@@ -280,21 +281,21 @@
                   </li>
                 </ul>
               </div>
-              <a class="button  catalog__button" href="order.html">Заказать</a>
+              <a class="button catalog__button" href="order.html">Заказать</a>
             </li>
-            <li class="products-list__item  products-list__item--add">
+            <li class="products-list__item products-list__item--add">
               <button class="products-list__add-item" type="button">
                 <span class="visually-hidden">Добавить товар</span>
               </button>
               <p class="products-list__show-more">Показать еще 100500 товаров</p>
               <p class="products-list__text">На самом деле вкусов гораздо больше!</p>
-              <a class="button  catalog__button--show-all" href="new-products.html">Показать все</a>
+              <a class="button catalog__button--show-all" href="new-products.html">Показать все</a>
             </li>
           </ul>
 
         </section>
         <section class="extra-products">
-          <h2 class="title  title--small">Дополнительные товары</h2>
+          <h2 class="title title--small">Дополнительные товары</h2>
           <ul class="extra-products__list">
             <li class="extra-products__item">
               <p class="extra-products__item-title">Сахарозаменитель</p>
@@ -302,7 +303,7 @@
                 1 упаковка (100 г)
                 <span class="extra-products__item-price">200 р</span>
               </p>
-              <a class="button  catalog__button" href="order.html">Заказать</a>
+              <a class="button catalog__button" href="order.html">Заказать</a>
             </li>
             <li class="extra-products__item">
               <p class="extra-products__item-title">Питьевая вода</p>
@@ -310,7 +311,7 @@
                 5 литр
                 <span class="extra-products__item-price">50 р</span>
               </p>
-              <a class="button  catalog__button" href="order.html">Заказать</a>
+              <a class="button catalog__button" href="order.html">Заказать</a>
             </li>
             <li class="extra-products__item">
               <p class="extra-products__item-title">Молоко</p>
@@ -318,7 +319,7 @@
                 1 литр
                 <span class="extra-products__item-price">100 р</span>
               </p>
-              <a class="button  catalog__button" href="order.html">Заказать</a>
+              <a class="button catalog__button" href="order.html">Заказать</a>
             </li>
             <li class="extra-products__item">
               <p class="extra-products__item-title">Витамины</p>
@@ -326,7 +327,7 @@
                 1 упаковка (30 г)
                 <span class="extra-products__item-price">300 р</span>
               </p>
-              <a class="button  catalog__button" href="order.html">Заказать</a>
+              <a class="button catalog__button" href="order.html">Заказать</a>
             </li>
           </ul>
           <div class="extra-products__gift">
@@ -351,31 +352,31 @@
       </section>
 
       <section class="map" aria-label="Адрес главного офиса офлайн-магазина: ул. Большая Конюшенная, 19/8, Санкт-Петербург.">
-        <iframe class="map__google-map" width="100%" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1259.039977790315!2d30.32199416259634!3d59.93875725066565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sua!4v1593077050504!5m2!1sru!2sua"></iframe>
+        <iframe class="map__google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1259.039977790315!2d30.32199416259634!3d59.93875725066565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sua!4v1593077050504!5m2!1sru!2sua"></iframe>
       </section>
     </main>
 
     <footer class="page-footer">
       <div class="wrapper">
-        <div class="page-footer__logo  main-logo">
+        <div class="page-footer__logo main-logo">
           <p class="main-logo__name">
             <b>Cat</b> energy
           </p>
         </div>
-        <div class="page-footer__socials  socials">
-          <ul class="socials__list">
-            <li class="socials__item">
-              <a class="socials__link  socials__link--vk" href=""></a>
+        <div class="page-footer__socials socials">
+          <ul class="site-list socials__list">
+            <li class="site-list__item socials__item">
+              <a class="site-list__link socials__link socials__link--vk" href=""></a>
             </li>
-            <li class="socials__item">
-              <a class="socials__link  socials__link--instagram" href=""></a>
+            <li class="site-list__item socials__item">
+              <a class="site-list__link socials__link socials__link--instagram" href=""></a>
             </li>
-            <li class="socials__item">
-              <a class="socials__link  socials__link--facebook" href=""></a>
+            <li class="site-list__item socials__item">
+              <a class="site-list__link socials__link socials__link--facebook" href=""></a>
             </li>
           </ul>
         </div>
-        <div class="page-footer__copyright  copyright">
+        <div class="page-footer__copyright copyright">
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <img class="copyright__img" src="https://via.placeholder.com/34x27" width="34" height="27" alt="Лого Html-academy.">

@@ -1,4 +1,33 @@
+.main-logo {
+  position: relative;
+
+  outline: 3px solid rgba(green, 0.5);
+}
+
+.main-logo__link {
+  display: block;
+  padding-top: 22px;
+  padding-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    padding: 0;
+  }
+}
+
+.main-logo__img {
+  @media (max-width: $mobile-width-only) {
+    position: absolute;
+    top: 12px;
+    left: 0;
+
+    display: block;
+  }
+}
+
 .main-logo__name {
+  margin: auto;
+
   font-weight: 400;
   text-align: center;
   color: $black;

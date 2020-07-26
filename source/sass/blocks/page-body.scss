@@ -1,4 +1,7 @@
 .page-body {
+  min-width: 320px;
+  padding: 0 20px;
+
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
@@ -6,4 +9,8 @@
   color: $special-dark-grey;
 
   background-color: $white;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
 }
