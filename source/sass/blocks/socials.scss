@@ -1,3 +1,9 @@
+.socials {
+  width: 130px;
+  margin: 0 auto;
+}
+
 .socials__list {
-  list-style: none;
+  display: flex;
+  justify-content: space-between;
 }

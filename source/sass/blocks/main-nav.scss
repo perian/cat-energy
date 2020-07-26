@@ -19,6 +19,8 @@
 }
 
 .main-nav__list {
+  align-items: center;
+
   outline: 3px solid rgba(green, 0.5);
 
   @media (min-width: $tablet-width) {
