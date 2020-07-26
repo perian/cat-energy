@@ -13,6 +13,13 @@
   outline: 3px solid yellow;
 
   @include oswald;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+    color: $black;
+
+    background: none;
+  }
 }
 
 .promo__header {

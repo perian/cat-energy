@@ -4,8 +4,8 @@
 
   outline: 3px solid blue;
 
-  @media (min-width: 768px) {
-    max-width: 1440px;
+  @media (min-width: $tablet-width) {
+    max-width: 1119px;
   }
 
   @media (min-width: $desktop-width) {
