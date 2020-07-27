@@ -16,7 +16,6 @@
 
 html {
   line-height: 1.15; /* 1 */
-  -webkit-text-size-adjust: 100%; /* 2 */
 }
 
 /* Sections
@@ -58,7 +57,11 @@ hr {
  */
 
 pre {
+<<<<<<< HEAD
   font-family: monospace, monospace; /* 1 */
+=======
+  font-family: monospace; /* 1 */
+>>>>>>> 133c89bcbb107494ff12f853066c7705752f8ad5
   font-size: 1em; /* 2 */
 }
 
@@ -81,7 +84,10 @@ a {
 
 abbr[title] {
   border-bottom: none; /* 1 */
+<<<<<<< HEAD
   text-decoration: underline; /* 2 */
+=======
+>>>>>>> 133c89bcbb107494ff12f853066c7705752f8ad5
   text-decoration: underline dotted; /* 2 */
 }
 
@@ -147,6 +153,7 @@ select { /* 1 */
 }
 
 /**
+<<<<<<< HEAD
  * Correct the inability to style clickable types in iOS and Safari.
  */
 
@@ -158,6 +165,8 @@ button,
 }
 
 /**
+=======
+>>>>>>> 133c89bcbb107494ff12f853066c7705752f8ad5
  * Remove the inner border and padding in Firefox.
  */
 
@@ -223,6 +232,7 @@ textarea {
   padding: 0; /* 2 */
 }
 
+<<<<<<< HEAD
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
@@ -260,6 +270,8 @@ textarea {
   font: inherit; /* 2 */
 }
 
+=======
+>>>>>>> 133c89bcbb107494ff12f853066c7705752f8ad5
 /* Misc
    ========================================================================== */
 
