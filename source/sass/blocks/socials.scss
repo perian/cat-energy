@@ -1,3 +1,13 @@
+.socials {
+  width: 130px;
+  margin: 0 auto;
+}
+
 .socials__list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }

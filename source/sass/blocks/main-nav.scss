@@ -1,0 +1,19 @@
+.main-nav {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: 16px;
+  right: 0;
+
+  outline: 3px solid rgba(green, 0.5);
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}

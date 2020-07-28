@@ -1,13 +1,19 @@
 .program {
-  margin-bottom: 20px;
+  display: grid;
+  grid-row-gap: 20px;
+  padding-bottom: 27px;
+
+  @media (min-width: $desktop-width) {
+    grid-column-gap: 80px;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.program__item {
   padding: 30px 33px 18px 20px;
 
   background-color: $basic-grey;
   outline: 3px solid yellow;
-
-  &:last-child {
-    margin-bottom: 27px;
-  }
 }
 
 .program__title {

@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html class="page" lang="ru" dir="ltr">
   <head>
-    <meta charset="utf-8">
     <title>Cat energy</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="./sass/global/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap" rel="stylesheet">
   </head>
   <body class="page-body">
     <header class="page-header">
-      <nav class="main-nav">
-        <div class="main-nav__wrapper">
+      <div class="wrapper">
+        <nav class="main-nav">
           <button class="main-nav__toggle" type="button" name="close-button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
           <div class="main-logo">
-            <a class="main-logo__link" aria-label="Логотип Cat-energy.">
+            <a class="main-logo__link" href="index.html" aria-label="Логотип Cat-energy.">
               <img class="main-logo__img" src="https://via.placeholder.com/33x38" width="33" height="38" alt="Логотип Cat-energy.">
               <p class="main-logo__name">
                 <b>Cat</b> energy
@@ -22,24 +23,24 @@
             </a>
           </div>
           <ul class="main-nav__list site-list visually-hidden">
-            <li class="site-list__item">
-              <a class="site-list__link" href="index.html">
+            <li class="main-nav__item site-list__item">
+              <a class="main-nav__link site-list__link" href="index.html">
                 Главная
               </a>
             </li>
-            <li class="site-list__item site-list__item--current">
-              <a class="site-list__link">
+            <li class="main-nav__item site-list__item site-list__item--current">
+              <a class="main-nav__link site-list__link">
                 Каталог продукции
               </a>
             </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="form.html">
+            <li class="main-nav__item site-list__item">
+              <a class="main-nav__link site-list__link" href="form.html">
                 Подбор программы
               </a>
             </li>
           </ul>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </header>
 
     <main class="page-main">
@@ -48,11 +49,9 @@
           <h2 class="title catalog__title">Каталог продукции</h2>
           <ul class="products-list">
             <li class="products-list__item">
-              <div class="products-list__image">
-                <a class="products-list__link" href="chicken.html">
-                  <img class="products-list__img products-list__img--chicken" src="https://via.placeholder.com/68x86" width="68" height="86" alt="Оранжевая банка c кормом для набора веса, со вкусом курицы.">
-                </a>
-              </div>
+              <a class="products-list__link products-list__image" href="chicken.html">
+                <img class="products-list__img products-list__img--chicken" src="https://via.placeholder.com/68x86" width="68" height="86" alt="Оранжевая банка c кормом для набора веса, со вкусом курицы.">
+              </a>
               <div class="products-list__info">
                 <p class="products-list__title">
                   <a class="products-list__link" href="chicken.html">
@@ -61,66 +60,50 @@
                 </p>
                 <ul class="products-list__data">
                   <li class="products-list__data-item">
-                    Обьем
-                    <span class="products-list__data-value">
-                      500 г
-                    </span>
+                    <p class="products-list__data-text">Обьем</p>
+                    <p class="products-list__data-text">500 г</p>
                   </li>
                   <li class="products-list__data-item">
-                    Вкус
-                    <span class="products-list__data-value">
-                      Курица
-                    </span>
+                    <p class="products-list__data-text">Вкус</p>
+                    <p class="products-list__data-text">Курица</p>
                   </li>
                   <li class="products-list__data-item">
-                    Цена
-                    <span class="products-list__data-value">
-                      700 Р.
-                    </span>
+                    <p class="products-list__data-text">Цена</p>
+                    <p class="products-list__data-text">700 Р.</p>
                   </li>
                 </ul>
               </div>
-              <a class="button catalog__button" href="order.html">Заказать</a>
+              <a class="button products-list__button" href="order.html">Заказать</a>
             </li>
             <li class="products-list__item">
-              <div class="products-list__image">
-                <a class="products-list__link" href="chicken.html">
-                  <img class="products-list__img products-list__img--chicken-big" src="https://via.placeholder.com/84x100" width="84" height="100" alt="Оранжевая банка c кормом для набора веса, со вкусом курицы.">
-                </a>
-              </div>
+              <a class="products-list__link products-list__image" href="chicken.html">
+                <img class="products-list__img products-list__img--chicken-big" src="https://via.placeholder.com/84x100" width="84" height="100" alt="Оранжевая банка c кормом для набора веса, со вкусом курицы.">
+              </a>
               <div class="products-list__info">
                 <a class="products-list__link" href="chicken.html">
                   <p class="products-list__title">Cat energy pro 1000 г</p>
                 </a>
                 <ul class="products-list__data">
                   <li class="products-list__data-item">
-                    Обьем
-                    <span class="products-list__data-value">
-                      100 г
-                    </span>
+                    <p class="products-list__data-text">Обьем</p>
+                    <p class="products-list__data-text">100 г</p>
                   </li>
                   <li class="products-list__data-item">
-                    Вкус
-                    <span class="products-list__data-value">
-                      Курица
-                    </span>
+                    <p class="products-list__data-text">Вкус</p>
+                    <p class="products-list__data-text">Курица</p>
                   </li>
                   <li class="products-list__data-item">
-                    Цена
-                    <span class="products-list__data-value">
-                      1000 Р.
-                    </span>
+                    <p class="products-list__data-text">Цена</p>
+                    <p class="products-list__data-text">1000 Р.</p>
                   </li>
                 </ul>
               </div>
-              <a class="button catalog__button" href="order.html">Заказать</a>
+              <a class="button products-list__button" href="order.html">Заказать</a>
             </li>
             <li class="products-list__item">
-              <div class="products-list__image">
-                <a class="products-list__link" href="fish.html">
-                  <img class="products-list__img products-list__img--fish" src="https://via.placeholder.com/68x86" width="68" height="86" alt="Зеленая банка c кормом для набора веса, со вкусом рыбы.">
-                </a>
-              </div>
+              <a class="products-list__link products-list__image" href="fish.html">
+                <img class="products-list__img products-list__img--fish" src="https://via.placeholder.com/68x86" width="68" height="86" alt="Зеленая банка c кормом для набора веса, со вкусом рыбы.">
+              </a>
               <div class="products-list__info">
                 <p class="products-list__title">
                   <a class="products-list__link" href="fish.html">
@@ -129,158 +112,120 @@
                 </p>
                 <ul class="products-list__data">
                   <li class="products-list__data-item">
-                    Обьем
-                    <span class="products-list__data-value">
-                      500 г
-                    </span>
+                    <p class="products-list__data-text">Обьем</p>
+                    <p class="products-list__data-text">500 г</p>
                   </li>
                   <li class="products-list__data-item">
-                    Вкус
-                    <span class="products-list__data-value">
-                      Рыба
-                    </span>
+                    <p class="products-list__data-text">Вкус</p>
+                    <p class="products-list__data-text">Рыба</p>
                   </li>
                   <li class="products-list__data-item">
-                    Цена
-                    <span class="products-list__data-value">
-                      700 Р.
-                    </span>
+                    <p class="products-list__data-text">Цена</p>
+                    <p class="products-list__data-text">700 Р.</p>
                   </li>
                 </ul>
               </div>
-              <a class="button catalog__button" href="order.html">Заказать</a>
+              <a class="button products-list__button" href="order.html">Заказать</a>
             </li>
             <li class="products-list__item">
-              <div class="products-list__image">
-                <a class="products-list__link" href="fish.html">
-                  <img class="products-list__img products-list__img--fish-big" src="https://via.placeholder.com/84x100" width="84" height="100" alt="Зеленая банка c кормом для набора веса, со вкусом рыбы.">
-                </a>
-              </div>
+              <a class="products-list__link products-list__image" href="fish.html">
+                <img class="products-list__img products-list__img--fish-big" src="https://via.placeholder.com/84x100" width="84" height="100" alt="Зеленая банка c кормом для набора веса, со вкусом рыбы.">
+              </a>
               <div class="products-list__info">
                 <a class="products-list__link" href="fish.html">
                   <p class="products-list__title">Cat energy pro 1000 г</p>
                 </a>
                 <ul class="products-list__data">
                   <li class="products-list__data-item">
-                    Обьем
-                    <span class="products-list__data-value">
-                      1000 г
-                    </span>
+                    <p class="products-list__data-text">Обьем</p>
+                    <p class="products-list__data-text">1000 г</p>
                   </li>
                   <li class="products-list__data-item">
-                    Вкус
-                    <span class="products-list__data-value">
-                      Рыба
-                    </span>
+                    <p class="products-list__data-text">Вкус</p>
+                    <p class="products-list__data-text">Рыба</p>
                   </li>
                   <li class="products-list__data-item">
-                    Цена
-                    <span class="products-list__data-value">
-                      100 Р.
-                    </span>
+                    <p class="products-list__data-text">Цена</p>
+                    <p class="products-list__data-text">100 Р.</p>
                   </li>
                 </ul>
               </div>
-              <a class="button catalog__button" href="order.html">Заказать</a>
+              <a class="button products-list__button" href="order.html">Заказать</a>
             </li>
             <li class="products-list__item">
-              <div class="products-list__image">
-                <a class="products-list__link" href="buckwheat.html">
-                  <img class="products-list__img products-list__img--buckwheat" src="https://via.placeholder.com/68x86" width="68" height="86" alt="Синяя банка c кормом для похудения, со вкусом гречки.">
-                </a>
-              </div>
+              <a class="products-list__link products-list__image" href="buckwheat.html">
+                <img class="products-list__img products-list__img--buckwheat" src="https://via.placeholder.com/68x86" width="68" height="86" alt="Синяя банка c кормом для похудения, со вкусом гречки.">
+              </a>
               <div class="products-list__info">
                 <a class="products-list__link" href="buckwheat.html">
                   <p class="products-list__title">Cat energy slim 500 г</p>
                 </a>
                 <ul class="products-list__data">
                   <li class="products-list__data-item">
-                    Обьем
-                    <span class="products-list__data-value">
-                      500 г
-                    </span>
+                    <p class="products-list__data-text">Обьем</p>
+                    <p class="products-list__data-text">500 г</p>
                   </li>
                   <li class="products-list__data-item">
-                    Вкус
-                    <span class="products-list__data-value">
-                      Гречка
-                    </span>
+                    <p class="products-list__data-text">Вкус</p>
+                    <p class="products-list__data-text">Гречка</p>
                   </li>
                   <li class="products-list__data-item">
-                    Цена
-                    <span class="products-list__data-value">
-                      400 Р.
-                    </span>
+                    <p class="products-list__data-text">Цена</p>
+                    <p class="products-list__data-text">400 Р.</p>
                   </li>
                 </ul>
               </div>
-              <a class="button catalog__button" href="order.html">Заказать</a>
+              <a class="button products-list__button" href="order.html">Заказать</a>
             </li>
             <li class="products-list__item">
-              <div class="products-list__image">
-                <a class="products-list__link" href="buckwheat.html">
-                  <img class="products-list__img products-list__img--buckwheat-big" src="https://via.placeholder.com/84x100" width="84" height="100" alt="Синяя банка c кормом для похудения, со вкусом гречки.">
-                </a>
-              </div>
+              <a class="products-list__link products-list__image" href="buckwheat.html">
+                <img class="products-list__img products-list__img--buckwheat-big" src="https://via.placeholder.com/84x100" width="84" height="100" alt="Синяя банка c кормом для похудения, со вкусом гречки.">
+              </a>
               <div class="products-list__info">
                 <a class="products-list__link" href="buckwheat.html">
                   <p class="products-list__title">Cat energy slim 1000 г</p>
                 </a>
                 <ul class="products-list__data">
                   <li class="products-list__data-item">
-                    Обьем
-                    <span class="products-list__data-value">
-                      1000 г
-                    </span>
+                    <p class="products-list__data-text">Обьем</p>
+                    <p class="products-list__data-text">1000 г</p>
                   </li>
                   <li class="products-list__data-item">
-                    Вкус
-                    <span class="products-list__data-value">
-                      Гречка
-                    </span>
+                    <p class="products-list__data-text">Вкус</p>
+                    <p class="products-list__data-text">Гречка</p>
                   </li>
                   <li class="products-list__data-item">
-                    Цена
-                    <span class="products-list__data-value">
-                      700 Р.
-                    </span>
+                    <p class="products-list__data-text">Цена</p>
+                    <p class="products-list__data-text">700 Р.</p>
                   </li>
                 </ul>
               </div>
-              <a class="button catalog__button" href="order.html">Заказать</a>
+              <a class="button products-list__button" href="order.html">Заказать</a>
             </li>
             <li class="products-list__item">
-              <div class="products-list__image">
-                <a class="products-list__link" href="rice.html">
-                  <img class="products-list__img products-list__img--rice" src="https://via.placeholder.com/68x86" width="68" height="86" alt="Фиолетовая банка c кормом для похудения, со вкусом риса.">
-                </a>
-              </div>
+              <a class="products-list__link products-list__image" href="rice.html">
+                <img class="products-list__img products-list__img--rice" src="https://via.placeholder.com/68x86" width="68" height="86" alt="Фиолетовая банка c кормом для похудения, со вкусом риса.">
+              </a>
               <div class="products-list__info">
                 <a class="products-list__link" href="rice.html">
                   <p class="products-list__title">Cat energy slim 500 г</p>
                 </a>
                 <ul class="products-list__data">
                   <li class="products-list__data-item">
-                    Обьем
-                    <span class="products-list__data-value">
-                      500 г
-                    </span>
+                    <p class="products-list__data-text">Обьем</p>
+                    <p class="products-list__data-text">500 г</p>
                   </li>
                   <li class="products-list__data-item">
-                    Вкус
-                    <span class="products-list__data-value">
-                      Рис
-                    </span>
+                    <p class="products-list__data-text">Вкус</p>
+                    <p class="products-list__data-text">Рис</p>
                   </li>
                   <li class="products-list__data-item">
-                    Цена
-                    <span class="products-list__data-value">
-                      500 Р.
-                    </span>
+                    <p class="products-list__data-text">Цена</p>
+                    <p class="products-list__data-text">500 Р.</p>
                   </li>
                 </ul>
               </div>
-              <a class="button catalog__button" href="order.html">Заказать</a>
+              <a class="button products-list__button" href="order.html">Заказать</a>
             </li>
             <li class="products-list__item products-list__item--add">
               <button class="products-list__add-item" type="button">
@@ -288,7 +233,9 @@
               </button>
               <p class="products-list__show-more">Показать еще 100500 товаров</p>
               <p class="products-list__text">На самом деле вкусов гораздо больше!</p>
-              <a class="button catalog__button--show-all" href="new-products.html">Показать все</a>
+              <a class="button products-list__button products-list__button--show-all" href="new-products.html">
+                Показать все
+              </a>
             </li>
           </ul>
 
@@ -302,7 +249,7 @@
                 1 упаковка (100 г)
                 <span class="extra-products__item-price">200 р</span>
               </p>
-              <a class="button catalog__button" href="order.html">Заказать</a>
+              <a class="button products-list__button" href="order.html">Заказать</a>
             </li>
             <li class="extra-products__item">
               <p class="extra-products__item-title">Питьевая вода</p>
@@ -310,7 +257,7 @@
                 5 литр
                 <span class="extra-products__item-price">50 р</span>
               </p>
-              <a class="button catalog__button" href="order.html">Заказать</a>
+              <a class="button products-list__button" href="order.html">Заказать</a>
             </li>
             <li class="extra-products__item">
               <p class="extra-products__item-title">Молоко</p>
@@ -318,7 +265,7 @@
                 1 литр
                 <span class="extra-products__item-price">100 р</span>
               </p>
-              <a class="button catalog__button" href="order.html">Заказать</a>
+              <a class="button products-list__button" href="order.html">Заказать</a>
             </li>
             <li class="extra-products__item">
               <p class="extra-products__item-title">Витамины</p>
@@ -326,7 +273,7 @@
                 1 упаковка (30 г)
                 <span class="extra-products__item-price">300 р</span>
               </p>
-              <a class="button catalog__button" href="order.html">Заказать</a>
+              <a class="button products-list__button" href="order.html">Заказать</a>
             </li>
           </ul>
           <div class="extra-products__gift">
@@ -355,23 +302,29 @@
       </section>
     </main>
 
-    <footer class="page-footer">
-      <div class="wrapper">
+    <div class="wrapper">
+      <footer class="page-footer">
         <div class="page-footer__logo main-logo">
           <p class="main-logo__name">
             <b>Cat</b> energy
           </p>
         </div>
         <div class="page-footer__socials socials">
-          <ul class="site-list socials__list">
-            <li class="site-list__item socials__item">
-              <a class="site-list__link socials__link socials__link--vk" href=""></a>
+          <ul class="page-footer__list socials__list">
+            <li class="socials__item">
+              <a class="socials__link socials__link--vk" href="">
+                <img src="https://via.placeholder.com/22x22" width="22" height="22" alt="">
+              </a>
             </li>
-            <li class="site-list__item socials__item">
-              <a class="site-list__link socials__link socials__link--instagram" href=""></a>
+            <li class="socials__item">
+              <a class="socials__link socials__link--instagram" href="">
+                <img src="https://via.placeholder.com/22x22" width="22" height="22" alt="">
+              </a>
             </li>
-            <li class="site-list__item socials__item">
-              <a class="site-list__link socials__link socials__link--facebook" href=""></a>
+            <li class="socials__item">
+              <a class="socials__link socials__link--facebook" href="">
+                <img src="https://via.placeholder.com/22x22" width="22" height="22" alt="">
+              </a>
             </li>
           </ul>
         </div>
@@ -381,7 +334,7 @@
             <img class="copyright__img" src="https://via.placeholder.com/34x27" width="34" height="27" alt="Лого Html-academy.">
           </a>
         </div>
-      </div>
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>

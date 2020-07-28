@@ -3,16 +3,37 @@
 
   background-color: $basic-grey;
   outline: 3px solid yellow;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    padding: 59px 0 56px;
+  }
 }
 
 .page-footer__logo {
   outline: 3px solid green;
+
+  @media (max-width: $mobile-width-only) {
+    padding: 22px 0;
+  }
 }
 
 .page-footer__socials {
   outline: 3px solid green;
+
+  @media (max-width: $mobile-width-only) {
+    padding: 22px 0;
+  }
 }
 
 .page-footer__copyright {
+  display: flex;
+  justify-content: space-between;
+
   outline: 3px solid green;
+
+  @media (max-width: $mobile-width-only) {
+    padding: 22px 0;
+  }
 }
