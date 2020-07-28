@@ -25,3 +25,7 @@
   @include oswald;
   @include font-size(14px, 20px);
 }
+
+.example__form-cat--after {
+  display: none;
+}

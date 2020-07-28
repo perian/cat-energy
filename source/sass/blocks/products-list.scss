@@ -32,8 +32,8 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: column;
-    padding: 40px 36px;
     align-items: center;
+    padding: 40px 36px;
   }
 
   &:not(:last-child) {
@@ -101,6 +101,7 @@
 
   @media (min-width: $tablet-width) {
     width: 100%;
+
     text-align: center;
   }
 }

@@ -1,7 +1,8 @@
 .program {
   display: grid;
-  grid-row-gap: 20px;
   padding-bottom: 27px;
+
+  grid-row-gap: 20px;
 
   @media (min-width: $desktop-width) {
     grid-column-gap: 80px;
