@@ -2,6 +2,33 @@
   text-transform: uppercase;
 
   @include oswald;
+
+  &__food-type {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__user-data {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.form__adds {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 565px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    justify-content: normal;
+  }
 }
 
 .form__intro {
@@ -15,7 +42,58 @@
   @include font-size(24px, 26px);
 }
 
+.form__label {
+  &--data {
+    display: flex;
+  }
+
+  &--user-data {
+    display: flex;
+  }
+}
+
+.form__label--radio {
+  color: $special-dark-grey-2;
+}
+
+.form__label--checkbox {
+  color: $special-dark-grey-2;
+
+  @media (min-width: $tablet-width) {
+    width: 221px;
+  }
+
+  @media (min-width: $desktop-width) {
+    &:not(:last-child) {
+      margin-right: 82px;
+    }
+  }
+}
+
+.form__input {
+  color: $special-dark-grey;
+  text-transform: uppercase;
+
+  &--data {
+    flex-grow: 1;
+  }
+
+  &--user-data {
+    flex-grow: 1;
+  }
+
+  &--radio {
+    display: none;
+  }
+
+  &--checkbox {
+    display: none;
+  }
+}
+
 .form__textarea {
+  width: 100%;
+
   text-transform: uppercase;
 }
 
