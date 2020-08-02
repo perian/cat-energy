@@ -1,6 +1,32 @@
 <!DOCTYPE html>
 <html class="page" lang="ru" dir="ltr">
   <head>
+    <!--  Pixel Glass -->
+    <style>
+      HTML {
+        background-repeat: no-repeat;
+        background-position:  50% 0;
+        /* По умолчанию показывается мобильный макет */
+        background-image: url( "pixelperfect/catalog-mobile.png");
+      }
+      /* Планшет */
+      @media ( min-width: 760px ) {
+        HTML {
+          /* Планшетный макет */
+          background-image: url( "pixelperfect/catalog-tablet.png");
+        }
+      }
+      /* Десктоп */
+      @media ( min-width: 1280px ) {
+        HTML {
+          /* Десктопный макет */
+          background-image: url( "pixelperfect/catalog-desktop.png");
+        }
+      }
+    </style>
+    <link rel="stylesheet" href="pixelperfect/styles.css">
+    <script src="pixelperfect/script.js"></script>
+    <!-- // Pixel Glass -->
     <title>Cat energy</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -23,18 +49,18 @@
             </a>
           </div>
           <ul class="main-nav__list site-list visually-hidden">
-            <li class="main-nav__item site-list__item">
-              <a class="main-nav__link site-list__link" href="index.html">
+            <li class="site-list__item">
+              <a class="site-list__link" href="index.html">
                 Главная
               </a>
             </li>
-            <li class="main-nav__item site-list__item site-list__item--current">
-              <a class="main-nav__link site-list__link">
+            <li class="site-list__item site-list__item--current">
+              <a class="site-list__link">
                 Каталог продукции
               </a>
             </li>
-            <li class="main-nav__item site-list__item">
-              <a class="main-nav__link site-list__link" href="form.html">
+            <li class="site-list__item">
+              <a class="site-list__link" href="form.html">
                 Подбор программы
               </a>
             </li>
@@ -286,19 +312,21 @@
 
       <section class="contacts">
         <div class="wrapper">
-          <p class="contacts__invitation">
-            Приглашаем к сотрудничеству дилеров!
-          </p>
-          <p class="contacts__address">
-            ул. Большая<br>
-            Конюшенная, д. 19/8<br>
-            Санкт-Петербург
-          </p>
+          <div class="contacts__container">
+            <p class="contacts__invitation">
+              Приглашаем к&nbsp;сотрудничеству дилеров!
+            </p>
+            <p class="contacts__address">
+              ул. Большая<br>
+              Конюшенная, д. 19/8<br>
+              Санкт-Петербург
+            </p>
+          </div>
         </div>
-      </section>
 
-      <section class="map" aria-label="Адрес главного офиса офлайн-магазина: ул. Большая Конюшенная, 19/8, Санкт-Петербург.">
-        <iframe class="map__google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1259.039977790315!2d30.32199416259634!3d59.93875725066565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sua!4v1593077050504!5m2!1sru!2sua"></iframe>
+        <section class="map" aria-label="Адрес главного офиса офлайн-магазина: ул. Большая Конюшенная, 19/8, Санкт-Петербург.">
+          <iframe class="map__google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1259.039977790315!2d30.32199416259634!3d59.93875725066565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sua!4v1593077050504!5m2!1sru!2sua"></iframe>
+        </section>
       </section>
     </main>
 

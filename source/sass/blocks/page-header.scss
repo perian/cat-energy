@@ -1,4 +1,5 @@
 .page-header {
+  margin-bottom: 30px;
   font-weight: 500;
   color: $black;
   text-transform: uppercase;
@@ -6,13 +7,12 @@
   background-color: $white;
 
   @include oswald;
-  @include font-size(20px);
 
   @media (min-width: $tablet-width) {
-    padding-top: 24px;
+    padding-top: 35px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 53px;
+    padding-top: 66px;
   }
 }

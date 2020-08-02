@@ -28,12 +28,13 @@
   padding-top: 11px;
   padding-bottom: 14px;
 
+  background-color: $basic-grey;
   outline: 3px solid green;
 
   @media (min-width: $tablet-width) {
     flex-direction: column;
-    padding: 40px 36px;
     align-items: center;
+    padding: 40px 36px;
   }
 
   &:not(:last-child) {
@@ -97,7 +98,9 @@
 }
 
 .products-list__info {
-  width: 50%;
+  @media (max-width: $mobile-width-only) {
+    width: 50%;
+  }
 
   @media (min-width: $tablet-width) {
     width: 100%;
