@@ -57,6 +57,14 @@
 
   @include oswald;
   @include font-size(16px, 20px);
+
+  @media (min-width: $tablet-width) {
+    @include font-size(20px, 24px);
+  }
+
+  @media (min-width: $tablet-width) {
+    @include font-size(20px, 21px);
+  }
 }
 
 .products-list__image {
