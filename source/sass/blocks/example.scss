@@ -1,8 +1,86 @@
 .example {
-  background-color: $basic-grey-3;
+  position: relative;
+
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: $basic-grey-3;
+
+    @media (min-width: $tablet-width) {
+      height: 40%;
+      bottom: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      height: 60%;
+    }
+  }
 }
 
-.example__statistics-result {
+.example__wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
+.example__container {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.example__desc {
+  @media (min-width: $tablet-width) {
+    width: 610px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 436px;
+  }
+}
+
+.example__stats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  text-align: center;
+
+  @media (min-width: $desktop-width) {
+    justify-content: flex-start;
+  }
+}
+
+.example__stats-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    width: 366px;
+  }
+}
+
+.example__stats-item {
+  width: 124px;
+
+  &:nth-child(odd):last-child {
+    margin: 0 auto;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 162px;
+  }
+}
+
+.example__stats-result {
   text-align: center;
   color: $black;
   text-transform: uppercase;
@@ -11,17 +89,48 @@
   @include font-size(24px);
 }
 
-.example__statistics-desc {
+.example__stats-desc {
   text-align: center;
 
   @include font-size(12px);
 }
 
 .example__expenses {
+  margin: 0;
+
   text-align: center;
   color: $black;
   text-transform: uppercase;
 
   @include oswald;
   @include font-size(14px, 20px);
+
+  @media (min-width: $tablet-width) {
+    margin-left: auto;
+
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: auto;
+    margin-left: 0;
+  }
+}
+
+.example__line-break {
+  display: none;
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.example__form {
+  width: 100%;
+
+  text-align: center;
+}
+
+.example__form-cat--after {
+  display: none;
 }
