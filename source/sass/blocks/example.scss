@@ -120,7 +120,7 @@
 .example__line-break {
   display: none;
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-max) {
     display: block;
   }
 }
