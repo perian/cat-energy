@@ -1,6 +1,32 @@
 <!DOCTYPE html>
 <html class="page" lang="ru" dir="ltr">
   <head>
+    <!--  Pixel Glass -->
+    <style>
+      HTML {
+        background-repeat: no-repeat;
+        background-position:  50% 0;
+        /* По умолчанию показывается мобильный макет */
+        background-image: url( "pixelperfect/index-mobile.png");
+      }
+      /* Планшет */
+      @media ( min-width: 760px ) {
+        HTML {
+          /* Планшетный макет */
+          background-image: url( "pixelperfect/index-tablet.png");
+        }
+      }
+      /* Десктоп */
+      @media ( min-width: 1280px ) {
+        HTML {
+          /* Десктопный макет */
+          background-image: url( "pixelperfect/index-desktop.png");
+        }
+      }
+    </style>
+    <link rel="stylesheet" href="pixelperfect/styles.css">
+    <script src="pixelperfect/script.js"></script>
+    <!-- // Pixel Glass -->
     <title>Cat energy</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -57,7 +83,8 @@
       <div class="wrapper">
         <section class="program">
           <section class="program__item">
-            <h3 class="program__title program__title--slim">
+            <div class="program__icon program__icon--slim"></div>
+            <h3 class="program__title">
               Похудение
             </h3>
             <p class="program__desc">
@@ -70,10 +97,11 @@
           </section>
 
           <section class="program__item">
-            <h3 class="program__title program__title--pro">
+            <div class="program__icon program__icon--pro"></div>
+            <h3 class="program__title">
               Набор массы
             </h3>
-            <p class="program__desc">
+            <p class="program__desc program__desc--short">
               Заработать авторитет среди дворовых котов и даже собак?
               Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
             </p>
