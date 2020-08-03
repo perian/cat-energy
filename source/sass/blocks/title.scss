@@ -1,6 +1,4 @@
 .title {
-  margin: 0;
-
   font-weight: 400;
   color: $black;
 
@@ -28,6 +26,12 @@
   &--tiny {
     @media (max-width: $mobile-width-only) {
       line-height: 24px;
+    }
+  }
+
+  &--white {
+    @media (max-width: $mobile-width-only) {
+      color: $white;
     }
   }
 }

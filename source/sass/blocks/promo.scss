@@ -19,6 +19,7 @@
     flex-direction: column;
     align-items: flex-start;
 
+    text-align: left;
     color: $black;
 
     background: none;
@@ -36,9 +37,17 @@
 }
 
 .promo__header {
+  width: 250px;
   font-weight: 400;
+  margin: 0 auto;
 
   @include font-size(36px);
+
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto 25px 0;
+    width: 414px;
+  }
 }
 
 .promo__slogan {
