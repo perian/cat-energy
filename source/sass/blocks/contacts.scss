@@ -1,18 +1,48 @@
 .contacts {
+  position: relative;
+}
+
+.contacts__container {
+  display: flex;
+  justify-content: space-between;
   padding-top: 28px;
   padding-bottom: 22px;
 
+  background-color: $white;
   outline: 3px solid yellow;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 42px;
+    padding-left: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+
+    margin-top: 95px;
+    padding-right: 42px;
+    padding-left: 42px;
+  }
 }
 
 .contacts__invitation {
+  width: 140px;
+
   color: $special-black;
   text-transform: uppercase;
 
   @include oswald;
   @include font-size(16px, 18px);
+
+  @media (min-width: $tablet-width) {
+    width: 163px;
+  }
 }
 
 .contacts__address {
   line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    text-align: right;
+  }
 }

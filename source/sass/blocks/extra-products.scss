@@ -1,8 +1,32 @@
+.extra-products {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
 .extra-products__list {
   margin: 0;
+  margin-bottom: 40px;
   padding: 0;
 
   list-style: none;
+
+  @media (min-width: $desktop-width) {
+    width: 73%;
+  }
+}
+
+.extra-products__item {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    align-items: center;
+  }
 }
 
 .extra-products__item-title {
@@ -11,21 +35,83 @@
 
   @include oswald;
   @include font-size(16px);
+
+  @media (min-width: $tablet-width) {
+    margin-right: auto;
+  }
+}
+
+.extra-products__item-desc {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+
+  @media (min-width: $desktop-width) {
+    width: 31%;
+    margin-right: 5%;
+  }
 }
 
 .extra-products__item-info {
   line-height: 14px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 51px;
+  }
+}
+
+.extra-products__item-price {
+  @media (min-width: $tablet-width) {
+    width: 36px;
+
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
+  }
+}
+
+.extra-products__button {
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 27%;
+  }
 }
 
 .extra-products__gift {
+  min-height: 289px;
+  padding-top: 186px;
+
   background-color: $basic-grey;
   background-image: url("../../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media (min-width: $tablet-width) {
+    min-width: 200px;
+    padding-top: 71px;
+  }
 }
 
 .extra-products__gift-desc {
+  width: 160px;
+  margin: 0 auto;
+
   text-align: center;
   color: $white;
 
   @include font-size(16px, 20px);
+
+  @media (min-width: $tablet-width) {
+    margin-left: 55%;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 20%;
+  }
 }
