@@ -112,6 +112,7 @@
 
   @media (min-width: $tablet-width) {
     width: 100%;
+
     text-align: center;
   }
 }
@@ -124,6 +125,10 @@
   color: $special-dark-grey;
 
   @include font-size(12px, 16px);
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+  }
 }
 
 .products-list__data-item {
@@ -141,6 +146,10 @@
 
   @include oswald;
   @include font-size(16px, 20px);
+
+  @media (min-width: $tablet-width) {
+    @include font-size(20px, 22px);
+  }
 }
 
 .products-list__button {

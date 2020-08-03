@@ -11,10 +11,18 @@
 
   @include oswald;
   @include font-size(16px);
+
+  @media (min-width: $tablet-width) {
+    @include font-size(20px);
+  }
 }
 
 .extra-products__item-info {
   line-height: 14px;
+
+  @media (min-width: $tablet-width) {
+    @include font-size(16px, 20px);
+  }
 }
 
 .extra-products__gift {
