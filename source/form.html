@@ -13,7 +13,7 @@
       @media ( min-width: 760px ) {
         HTML {
           /* Планшетный макет */
-          background-image: url( "pixelperfect/from-tablet.png");
+          background-image: url( "pixelperfect/form-tablet.png");
         }
       }
       /* Десктоп */
@@ -76,31 +76,33 @@
           <p class="form__intro">
             Заполните анкету, и мы подберем программу питания для вашего кота
           </p>
-          <fieldset class="form__fieldset">
-            <div class="form__cat-data">
-              <label class="form__label form__label--data" for="cat-name">Имя:*
-              <input class="form__input form__input--data" type="text" id="cat-name" name="cat-name" placeholder="Барсик" required></label>
+          <div class="form__container">
+            <fieldset class="form__fieldset form__fieldset--half-width">
+              <div class="form__cat-data">
+                <label class="form__label form__label--data" for="cat-name">Имя:*
+                <input class="form__input form__input--data" type="text" id="cat-name" name="cat-name" placeholder="Барсик" required></label>
 
-              <label class="form__label form__label--data" for="cat-weight">Вес (кг):*
-              <input class="form__input form__input--data" type="text" id="cat-weight" name="cat-weight" placeholder="7" required></label>
+                <label class="form__label form__label--data" for="cat-weight">Вес (кг):*
+                <input class="form__input form__input--data" type="text" id="cat-weight" name="cat-weight" placeholder="7" required></label>
 
-              <label class="form__label form__label--data" for="cat-age">Возраст (лет):
-              <input class="form__input form__input--data" type="text" id="cat-age" name="cat-age" placeholder="7"></label>
-            </div>
-          </fieldset>
+                <label class="form__label form__label--data" for="cat-age">Возраст (лет):
+                <input class="form__input form__input--data" type="text" id="cat-age" name="cat-age" placeholder="7"></label>
+              </div>
+            </fieldset>
 
-          <fieldset class="form__fieldset">
-            <div class="form__food-type">
-              <input class="form__input form__input--radio" type="radio" id="weight-loss" name="radio" checked>
-              <label class="form__label form__label--radio" for="weight-loss">Похудение</label>
+            <fieldset class="form__fieldset form__fieldset--half-width">
+              <div class="form__food-type">
+                <input class="form__input form__input--radio" type="radio" id="weight-loss" name="radio" checked>
+                <label class="form__label form__label--radio" for="weight-loss">Похудение</label>
 
-              <input class="form__input form__input--radio" type="radio" id="weight-gain" name="radio">
-              <label class="form__label form__label--radio" for="weight-gain">Набор массы</label>
+                <input class="form__input form__input--radio" type="radio" id="weight-gain" name="radio">
+                <label class="form__label form__label--radio" for="weight-gain">Набор массы</label>
 
-              <input class="form__input form__input--radio" type="radio" id="john-snow" name="radio">
-              <label class="form__label form__label--radio" for="john-snow">Не знаю (Нужен ваш совет)</label>
-            </div>
-          </fieldset>
+                <input class="form__input form__input--radio" type="radio" id="john-snow" name="radio">
+                <label class="form__label form__label--radio" for="john-snow">Не знаю (Нужен ваш совет)</label>
+              </div>
+            </fieldset>
+          </div>
 
           <fieldset class="form__fieldset">
             <legend class="form__legend">Контактные данные (владельца кота)</legend>
@@ -139,8 +141,10 @@
             </div>
           </fieldset>
 
-          <button class="button button--custom" type="button" name="button">Отправить заявку</button>
-          <p class="form__text">* — Обязательные поля</p>
+          <div class="form__container form__container--narrow">
+            <button class="button form__button" type="button" name="button">Отправить заявку</button>
+            <p class="form__text">* — Обязательные поля</p>
+          </div>
         </form>
       </div>
 
