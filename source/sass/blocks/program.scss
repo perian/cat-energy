@@ -15,7 +15,7 @@
 }
 
 .program__item {
-  padding: 25px 20px 20px;
+  padding: 25px 20px 19px;
 
   background-color: $basic-grey;
 
@@ -151,7 +151,7 @@
   margin: 0 0 21px;
   padding-bottom: 20px;
 
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid $special-grey;
 
   @media (min-width: $tablet-width) {
     width: 62%;
