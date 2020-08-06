@@ -1,7 +1,13 @@
 .advantages {
   margin-bottom: 40px;
+}
 
-  outline: 3px solid yellow;
+.advantages__title {
+  margin: 0 0 38px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 72px;
+  }
 }
 
 .advantages__list {
@@ -14,17 +20,15 @@
   grid-row-gap: 20px;
 
   @media (min-width: $tablet-width) {
-    padding-left: 0;
-
-    grid-column-gap: 22%;
-    grid-row-gap: 90px;
-    grid-template-columns: 32% 32%;
+    grid-column-gap: 19%;
+    grid-row-gap: 40px;
+    grid-template-columns: 35% 35%;
     grid-template-rows: repeat(2, minmax(277px, auto));
   }
 
   @media (min-width: $desktop-width) {
-    grid-column-gap: 8%;
-    grid-template-columns: 19% 19% 19% 19%;
+    grid-column-gap: 5.6%;
+    grid-template-columns: 21% 21% 21% 21%;
     grid-template-rows: minmax(277px, auto);
   }
 }
@@ -33,7 +37,57 @@
   display: flex;
 
   @media (min-width: $tablet-width) {
+    position: relative;
+
     flex-direction: column;
+  }
+
+  &::after {
+    @media (min-width: $tablet-width) {
+      content: "";
+      position: absolute;
+      top: 92px;
+      right: 0;
+      z-index: -1;
+
+      font-size: 278px;
+      color: $basic-grey;
+
+      @include oswald;
+    }
+
+    @media (min-width: $desktop-width) {
+      right: 9px;
+    }
+  }
+
+  &:first-child::after {
+    @media (min-width: $tablet-width) {
+      content: "1";
+      right: 18px;
+    }
+
+    @media (min-width: $desktop-width) {
+      right: 27px;
+    }
+  }
+
+  &:nth-child(2)::after {
+    @media (min-width: $tablet-width) {
+      content: "2";
+    }
+  }
+
+  &:nth-child(3)::after {
+    @media (min-width: $tablet-width) {
+      content: "3";
+    }
+  }
+
+  &:nth-child(4)::after {
+    @media (min-width: $tablet-width) {
+      content: "4";
+    }
   }
 }
 
@@ -50,7 +104,7 @@
   @media (min-width: $tablet-width) {
     width: 80px;
     height: 80px;
-    margin-bottom: 31px;
+    margin: 0 0 32px;
   }
 
   &--leaf {
@@ -70,8 +124,10 @@
   }
 }
 
-.advatages__text {
+.advantages__text {
   margin: 0;
+
+  color: $special-dark-grey;
 
   @media (max-width: $mobile-width-only) {
     padding: 2px 0 0;
