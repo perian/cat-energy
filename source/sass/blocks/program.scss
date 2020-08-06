@@ -1,14 +1,16 @@
 .program {
   display: grid;
-  padding-bottom: 27px;
+  margin-bottom: 26px;
 
   grid-row-gap: 20px;
 
   @media (min-width: $tablet-width) {
     grid-row-gap: 30px;
+    margin-bottom: 45px;
   }
 
   @media (min-width: $desktop-width) {
+    margin-bottom: 71px;
     grid-column-gap: 80px;
     grid-template-columns: 1fr 1fr;
   }
@@ -187,6 +189,12 @@
   @include oswald;
   @include font-size(16px);
 
+  @media (min-width: $tablet-width) {
+    padding-right: 49px;
+
+    @include font-size(20px, 30px);
+  }
+
   &::after {
     content: "";
     position: absolute;
@@ -204,11 +212,5 @@
     @media (min-width: $tablet-width) {
       top: 9px;
     }
-  }
-
-  @media (min-width: $tablet-width) {
-    padding-right: 49px;
-
-    @include font-size(20px, 30px);
   }
 }
