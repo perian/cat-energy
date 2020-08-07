@@ -2,6 +2,13 @@
   @media (max-width: $mobile-width-only) {
     width: 280px;
     margin: 0 auto;
-    padding: 12px 0 14px;
+  }
+}
+
+.main-logo__image {
+  display: block;
+
+  &--center {
+    margin: 0 auto;
   }
 }
