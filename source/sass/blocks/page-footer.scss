@@ -4,15 +4,20 @@
   background-color: $basic-grey;
 
   @media (min-width: $tablet-width) {
+    padding: 58px 0;
+  }
+}
+
+.page-footer__wrapper {
+  @media (min-width: $tablet-width) {
     display: flex;
     align-items: center;
-    padding: 58px 0;
   }
 }
 
 .page-footer__logo {
   @media (max-width: $mobile-width-only) {
-    padding: 39px 0 32px;
+    padding: 14px 0 32px;
 
     text-align: center;
   }
@@ -20,7 +25,12 @@
 
 .page-footer__socials {
   @media (max-width: $mobile-width-only) {
+    position: relative;
+
     padding: 22px 0;
+    border: 1px solid $special-grey;
+    border-left: 0;
+    border-right: 0;
   }
 
   @media (min-width: $tablet-width) {

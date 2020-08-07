@@ -1,14 +1,5 @@
 .contacts {
   position: relative;
-  margin-bottom: 199px;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 512px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-bottom: 199px;
-  }
 }
 
 .contacts__container {
