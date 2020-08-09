@@ -8,6 +8,7 @@
   text-decoration: none;
 
   background-color: $basic-green;
+  border: none;
 
   @include oswald;
   @include font-size(16px);
