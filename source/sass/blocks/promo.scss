@@ -134,7 +134,7 @@
   }
 }
 
-.promo .promo__button {
+.promo__button {
   @include font-size(14px, 18px);
 
   @media (min-width: $tablet-width) {

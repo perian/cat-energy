@@ -6,11 +6,19 @@
   padding: 0;
 
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    width: 105px;
+  }
 }
 
 .socials__item {
   &:not(:last-child) {
     margin-right: 38px;
+
+    @media (min-width: $tablet-width) {
+      margin-right: 29px;
+    }
   }
 }
 
