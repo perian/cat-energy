@@ -8,12 +8,64 @@
 
 .main-nav__toggle {
   position: absolute;
-  top: 16px;
-  right: 0;
+  top: 9px;
+  right: -13px;
 
-  outline: 3px solid rgba(green, 0.5);
+  width: 50px;
+  height: 40px;
+
+  background: none;
+  border: none;
 
   @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 11px;
+  right: 0;
+  left: 0;
+
+  width: 24px;
+  height: 1.5px;
+  margin: auto;
+
+  background-color: $black;
+  box-shadow: 0 8px $black, 0 16px $black;
+}
+
+.main-nav--opened .main-nav__toggle::after,
+.main-nav--opened .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 21px;
+  left: 12px;
+
+  width: 25px;
+  height: 1.5px;
+
+  background-color: $black;
+}
+
+.main-nav--opened .main-nav__toggle::after {
+  transform: rotate(45deg);
+}
+
+.main-nav--opened .main-nav__toggle::before {
+  transform: rotate(-45deg);
+}
+
+.main-nav--closed .site-list {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+}
+
+.main-nav--nojs .main-nav__toggle {
+  @media (max-width: $mobile-width-only) {
     display: none;
   }
 }

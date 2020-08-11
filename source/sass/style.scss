@@ -1,8 +1,11 @@
 @import "./global/fonts";
 @import "./global/variables";
 @import "./global/mixins";
+@import "./blocks/wrapper";
 @import "./blocks/site-list";
 @import "./blocks/button";
+@import "./blocks/title";
+@import "./blocks/visually-hidden.scss";
 @import "./blocks/advantages";
 @import "./blocks/catalog";
 @import "./blocks/contacts";
@@ -20,5 +23,3 @@
 @import "./blocks/program";
 @import "./blocks/promo";
 @import "./blocks/socials";
-@import "./blocks/title";
-@import "./blocks/wrapper";
