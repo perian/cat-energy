@@ -30,7 +30,6 @@
     <title>Cat energy</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./sass/global/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
   </head>
@@ -141,7 +140,7 @@
             <p class="example__desc">
               Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
               Отличный результат без изнуряющих тренировок!
-              При этом он не менял своих привычек и по-&nbsp;прежнему спит по 16 часов в день.
+              При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
             </p>
             <div class="example__stats">
               <div class="example__stats-container">
@@ -155,7 +154,7 @@
                 </div>
               </div>
               <p class="example__expenses">
-                Затраты на питание:<br class="example__line-break">
+                Затраты на питание:
                 <span class="example__sum">15 000 руб.</span>
               </p>
             </div>
@@ -163,13 +162,21 @@
 
           <form class="example__form" action="https://echo.htmlacademy.ru" method="post">
             <div class="example__picture">
-              <img class="example__form-cat example__form-cat--before" src="https://via.placeholder.com/311x232" width="311" height="232" alt="Кот до нашей программы">
-              <img class="example__form-cat example__form-cat--after" src="https://via.placeholder.com/251x240" width="251" height="240" alt="Кот после нашей программы">
+              <img class="example__image example__image--before" src="./img/before-mobile@1x.png" width="311" height="232" alt="Кот до нашей программы">
+              <img class="example__image example__image--after" src="https://via.placeholder.com/251x240" width="251" height="240" alt="Кот после нашей программы">
             </div>
             <label class="example__form-label" for="before-after">
-              Было
-              <input class="example__form-input" type="range" id="before-after" name="before-after">
-              Стало
+              <p class="example__text">
+                Было
+              </p>
+              <div class="example__range">
+                <div class="example__scale">
+                  <input class="example__form-input" type="range" id="before-after" name="before-after">
+                </div>
+              </div>
+              <p class="example__text">
+                Стало
+              </p>
             </label>
           </form>
         </div>
@@ -184,7 +191,9 @@
             <p class="contacts__address">
               ул. Большая<br>
               Конюшенная, д. 19/8<br>
-              Санкт-Петербург
+              <span class="contacts__address contacts__address--bottom">
+                Санкт-Петербург
+              </span>
             </p>
           </div>
         </div>

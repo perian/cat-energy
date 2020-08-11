@@ -30,7 +30,6 @@
     <title>Cat energy</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./sass/global/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
   </head>
@@ -67,9 +66,9 @@
       </div>
     </header>
 
-    <main class="page-main">
+    <main class="page-main page-main--form">
       <div class="wrapper">
-        <h1 class="title title--custom-margin">Подбор программы</h1>
+        <h1 class="title page-main__title">Подбор программы</h1>
         <form class="form" action="https://echo.htmlacademy.ru" method="post">
           <p class="form__intro">
             Заполните анкету, и мы подберем программу питания для вашего кота
@@ -109,7 +108,7 @@
               <input class="form__input form__input--user-data" type="email" id="user-email" name="user-email" placeholder="kuklachev@gmail.com" required>
             </label>
 
-              <label class="form__label form__label--user-data" for="user-tel">Телефон:*
+              <label class="form__label form__label--user-data form__label--phone" for="user-tel">Телефон:*
               <input class="form__input form__input--user-data" type="tel" id="user-tel" name="user-tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="8 (960) 900-60-90" required></label>
             </div>
           </fieldset>
@@ -153,7 +152,9 @@
               <p class="contacts__address">
                 ул. Большая<br>
                 Конюшенная, д. 19/8<br>
-                Санкт-Петербург
+                <span class="contacts__address contacts__address--bottom">
+                  Санкт-Петербург
+                </span>
               </p>
             </div>
           </div>
