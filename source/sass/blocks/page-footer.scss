@@ -32,17 +32,27 @@
     position: relative;
 
     padding: 22px 0;
+
     border: 1px solid $special-grey;
-    border-left: 0;
     border-right: 0;
+    border-left: 0;
   }
 
   @media (min-width: $tablet-width) {
+    flex-grow: 1;
     margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
     margin: 0 auto 8px;
+  }
+}
+
+.page-footer__list {
+  @media (min-width: $tablet-width) {
+    justify-content: center;
+    width: auto;
+    padding-left: 15px;
   }
 }
 

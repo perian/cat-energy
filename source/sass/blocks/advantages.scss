@@ -56,7 +56,6 @@
       position: absolute;
       top: 92px;
       right: 0;
-      z-index: -1;
 
       font-size: 278px;
       color: $basic-grey;
@@ -142,6 +141,8 @@
   }
 
   @media (min-width: $tablet-width) {
+    z-index: 1;
+
     @include font-size(16px, 24px);
   }
 }
