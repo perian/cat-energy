@@ -5,41 +5,44 @@
   grid-row-gap: 20px;
 
   @media (min-width: $tablet-width) {
-    grid-row-gap: 30px;
     margin-bottom: 45px;
+
+    grid-row-gap: 30px;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 71px;
+
     grid-column-gap: 80px;
     grid-template-columns: 1fr 1fr;
   }
 }
 
 .program__item {
-  padding: 25px 20px 19px;
+  position: relative;
+
+  padding: 30px 20px 19px;
 
   background-color: $basic-grey;
 
-  @media (min-width: $tablet-width) and (max-width: $tablet-width-max) {
-    position: relative;
-  }
-
   @media (min-width: $tablet-width) {
+    position: relative;
+
     padding: 77px 52px 56px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 47px 52px 59px;
+    padding: 77px 52px 59px;
   }
 }
 
 .program__icon {
-  position: relative;
+  position: absolute;
+  top: 24px;
+  left: 22px;
 
   width: 50px;
   height: 50px;
-  margin-bottom: -45px;
 
   background-color: $basic-green;
   border-radius: 50%;
@@ -51,31 +54,32 @@
     background-repeat: no-repeat;
   }
 
-  @media (min-width: $tablet-width) and (max-width: $tablet-width-max) {
+  @media (min-width: $tablet-width) {
     position: absolute;
     top: 91px;
     right: 61px;
-  }
+    left: auto;
 
-  @media (min-width: $tablet-width) {
     width: 200px;
     height: 200px;
   }
 
   @media (min-width: $desktop-width) {
+    top: 47px;
+    right: auto;
+
     width: 100px;
     height: 100px;
-    margin-bottom: -70px;
   }
 }
 
 .program__icon--slim {
   &::before {
     top: -3px;
-    left: 8px;
+    left: 7px;
 
     width: 50px;
-    height: 53px;
+    height: 50px;
 
     background-image: url("../../img/icon-cat-slim.svg");
 
@@ -99,8 +103,8 @@
 
 .program__icon--pro {
   &::before {
-    top: 8px;
-    left: -7px;
+    top: 11px;
+    left: -10px;
 
     width: 67px;
     height: 50px;

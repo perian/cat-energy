@@ -69,3 +69,9 @@
     display: none;
   }
 }
+
+.main-nav__list {
+  @media (min-width: $desktop-width) {
+    z-index: 1;
+  }
+}

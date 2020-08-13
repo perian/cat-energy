@@ -8,7 +8,8 @@
   list-style: none;
 
   @media (min-width: $tablet-width) {
-    width: 105px;
+    width: auto;
+    padding-left: 20px;
   }
 }
 
@@ -47,11 +48,11 @@
 
   &--facebook {
     width: 10px;
-    height: 18px;
+    height: 19px;
 
     @media (min-width: $tablet-width) {
-      width: 13px;
-      height: 27px;
+      width: 14px;
+      height: 28px;
     }
   }
 }
