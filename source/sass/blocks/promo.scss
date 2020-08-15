@@ -8,37 +8,6 @@
 
   @include oswald;
 
-  &::before {
-    @media (min-width: $desktop-width) {
-      content: "";
-      position: absolute;
-      top: 0;
-      right: 0;
-
-      width: 100%;
-      height: 305px;
-
-      background-color: $special-green;
-      background-image: url("../../img/index-background-mobile@1x.jpg");
-      background-repeat: no-repeat;
-      background-position: center top;
-
-
-      @media (min-width: $tablet-width) {
-        background-color: inherit;
-        background-image: none;
-      }
-
-      @media (min-width: $desktop-width) {
-        width: 50%;
-        height: 694px;
-
-        background-color: $special-green;
-        background-image: url("../../img/index-background-desktop@1x.jpg");
-      }
-    }
-  }
-
   @media (max-width: $mobile-width-only) {
     position: relative;
   }
@@ -54,8 +23,52 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 153px;
-    padding-top: 117px;
+    position: relative;
+
+    min-height: 694px;
+    margin-bottom: 82px;
+    padding-top: 140px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 100%;
+    height: 305px;
+
+    background-image: url("../../img/index-background-mobile@1x.jpg"),
+      linear-gradient(90deg, rgba(101, 169, 60, 1) 40%, rgba(100, 166, 58, 1) 60%);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: contain;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/index-background-mobile@2x.jpg");
+    }
+
+    @media (min-width: $tablet-width) {
+      content: none;
+    }
+
+    @media (min-width: $desktop-width) {
+      content: "";
+
+      width: 50%;
+      height: 100%;
+
+      background-color: $special-green;
+      background-image: url("../../img/index-background-desktop@1x.jpg");
+      background-position: left top;
+      background-size: auto;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../img/index-background-desktop@2x.jpg");
+        background-size: cover;
+      }
+    }
   }
 }
 
@@ -70,8 +83,10 @@
   }
 
   @media (min-width: $desktop-width) {
+    position: relative;
+
     flex-wrap: wrap;
-    height: 400px;
+    align-content: flex-start;
   }
 }
 
@@ -91,7 +106,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 80px;
+    margin: 0 0 41px 80px;
+    padding-top: 83px;
   }
 }
 
@@ -113,26 +129,32 @@
   }
 }
 
-.promo__img {
-  width: 100%;
+.promo__picture {
   max-width: 280px;
-  height: 270px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     order: 1;
     max-width: 709px;
     height: 609px;
-    margin: 0 auto;
-    margin-top: -83px;
+    margin: -83px auto 0;
   }
 
   @media (min-width: $desktop-width) {
-    z-index: 0;
+    position: absolute;
+    top: 0;
+    right: 250px;
 
     max-width: 552px;
     height: 499px;
-    margin: -82px -72px 0 -343px;
+    margin: 0 auto 0 -10px;
   }
+}
+
+.promo__img {
+  display: block;
+  width: auto;
+  margin-bottom: 2px;
 }
 
 .promo__button {
