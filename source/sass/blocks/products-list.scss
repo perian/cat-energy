@@ -123,6 +123,12 @@
   @media (min-width: $desktop-width) {
     margin: -80px 0 43px;
   }
+
+  &--short {
+    @media (max-width: $mobile-width-only) {
+      height: 126px;
+    }
+  }
 }
 
 .products-list__picture {
@@ -137,8 +143,15 @@
   width: auto;
 
   @media (max-width: $mobile-width-only) {
-    width: 136px;
-    height: 136px;
+    width: 140px;
+    height: 140px;
+  }
+
+  &--small {
+    @media (max-width: $mobile-width-only) {
+      width: 130px;
+      height: 130px;
+    }
   }
 }
 
