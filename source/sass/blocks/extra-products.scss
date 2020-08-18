@@ -1,9 +1,10 @@
 .extra-products {
   margin-bottom: 34px;
-  padding-top: 27px;
+  padding-top: 29px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 76px;
+    padding-top: 27px;
   }
 
   @media (min-width: $desktop-width) {

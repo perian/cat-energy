@@ -40,7 +40,7 @@
 }
 
 .example__container {
-  margin-bottom: 41px;
+  margin-bottom: 33px;
   padding-top: 29px;
 
   @media (min-width: $tablet-width) {
@@ -233,24 +233,39 @@
   }
 }
 
-.example__picture {
+.example__image {
   display: block;
+  position: relative;
   height: 240px;
-  max-width: 280px;
-  margin: 0 auto 26px;
+  margin: 0 auto 34px;
 
   @media (min-width: $tablet-width) {
     height: 510px;
     max-width: 673px;
+    padding-top: 15px;
   }
 
   @media (min-width: $desktop-width) {
     height: 546px;
-    margin-bottom: 5px;
+    max-width: 685px;
+    padding-top: 0;
+    margin-bottom: 10px;
   }
 }
 
 .example__img {
+  height: 240px;
+  width: auto;
+  object-fit: cover;
+
+  @media (min-width: $tablet-width) {
+    height: 510px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 517px;
+  }
+
   &--after {
     display: none;
   }
@@ -295,7 +310,7 @@
       content: "";
       position: absolute;
       left: 0;
-      bottom: -2px;
+      bottom: -6px;
 
       width: 100%;
       height: 1px;
