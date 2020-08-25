@@ -14,6 +14,8 @@ $special-green: #63a73a;
 $basic-grey: #f2f2f2;
 $basic-grey-2: #ebebeb;
 $basic-grey-3: #eaeaea;
+$basic-grey-4: #e7e7e7;
+$basic-grey-5: #bababa;
 $special-grey: #cdcdcd;
 $special-grey-2: #666666;
 $special-grey-3: #c4c4c4;
@@ -21,13 +23,21 @@ $special-dark-grey: #444444;
 $special-dark-grey-2: #222222;
 $status-error: #ff8282;
 
-//style-guide main-menu
+//style-guide
+$opacity-hover: 0.6;
+$opacity-active: 0.3;
+
+//main-menu
 $main-menu: $black;
-$main-menu-hover: rgba($main-menu, 0.6);
-$main-menu-active: rgba($main-menu, 0.3);
+$main-menu-hover: rgba($main-menu, $opacity-hover);
+$main-menu-active: rgba($main-menu, $opacity-active);
 $main-menu-alt: $white;
-$main-menu-alt-hover: rgba($main-menu-alt, 0.6);
-$main-menu-alt-active: rgba($main-menu-alt, 0.3);
+$main-menu-alt-hover: rgba($main-menu-alt, $opacity-hover);
+$main-menu-alt-active: rgba($main-menu-alt, $opacity-active);
+
+//button
+$btn-hover: $basic-green-2;
+$btn-active: $basic-green-2;
 
 // shadows
 $shadow-normal: 0 1px 3px rgba(0, 0, 0, 0.16);

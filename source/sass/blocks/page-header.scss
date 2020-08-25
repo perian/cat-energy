@@ -6,12 +6,12 @@
   @include oswald;
 
   @media (min-width: $tablet-width) {
-    padding-top: 35px;
+    padding-top: 25px;
   }
 
   @media (min-width: $desktop-width) {
     width: 100%;
-    padding-top: 66px;
+    padding-top: 54px;
   }
 
   &--absolute {

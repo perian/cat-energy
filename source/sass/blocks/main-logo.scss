@@ -1,8 +1,39 @@
 .main-logo {
-  @media (max-width: $mobile-width-only) {
-    width: 280px;
-    margin: 0 auto;
-    padding: 12px 0 14px;
+  width: 280px;
+  margin: 0 auto;
+  padding: 11px 90px 14px 0;
+
+  @media (min-width: $tablet-width) {
+    width: 174px;
+    height: 57px;
+    margin: 0;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 200px;
+    height: 60px;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.main-logo--footer {
+  width: auto;
+  height: auto;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
   }
 }
 
@@ -10,6 +41,8 @@
   display: block;
 
   &--center {
-    margin: 0 auto;
+    @media (max-width: $mobile-width-only) {
+      margin: 0 auto;
+    }
   }
 }

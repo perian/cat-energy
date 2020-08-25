@@ -14,7 +14,7 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
-    padding-top: 65px;
+    padding-top: 58px;
 
     text-align: left;
     color: $black;
@@ -46,7 +46,8 @@
     background-size: contain;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/index-background-mobile@2x.jpg");
+      background-image: url("../../img/index-background-mobile@2x.jpg"),
+        linear-gradient(90deg, rgba(101, 169, 60, 1) 40%, rgba(100, 166, 58, 1) 60%);
     }
 
     @media (min-width: $tablet-width) {
@@ -61,7 +62,7 @@
 
       background-color: $special-green;
       background-image: url("../../img/index-background-desktop@1x.jpg");
-      background-position: left top;
+      background-positiotn: left top;
       background-size: auto;
 
       @media (min-resolution: 2dppx) {
@@ -154,7 +155,7 @@
 .promo__img {
   display: block;
   width: auto;
-  margin-bottom: 2px;
+  margin: 0 auto 3px;
 }
 
 .promo__button {

@@ -105,10 +105,18 @@
 
 .site-list--desktop .site-list__link {
   @media (min-width: $desktop-width) {
-    color: $white;
+    color: $main-menu-alt;
 
     &:not([href])::after {
       background-color: $white;
+    }
+
+    &:hover {
+      color: $main-menu-alt-hover;
+    }
+
+    &:active {
+      color: $main-menu-alt-active;
     }
   }
 }
