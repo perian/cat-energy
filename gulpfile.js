@@ -9,9 +9,9 @@ const webp = require('gulp-webp');
 
 // Converter to webp
 const createWebp = () => {
- return gulp.src("source/img/**/*.{png,jpg}")
- .pipe(webp({quality: 90}))
- .pipe(gulp.dest("source/img"))
+  return gulp.src("source/img/**/*.{png,jpg}")
+  .pipe(webp({quality: 90}))
+  .pipe(gulp.dest("source/img"))
 }
 exports.webp = createWebp;
 
