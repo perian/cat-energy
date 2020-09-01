@@ -277,20 +277,11 @@
 
 .products-list__button {
   flex-grow: 1;
-  align-self: center;
+  align-self: stretch;
 
   @media (min-width: $tablet-width) {
     flex-grow: 0;
-    align-self: stretch;
     margin: 0 38px;
-  }
-
-  &--show-all {
-    align-self: stretch;
-
-    color: $special-dark-grey;
-
-    background-color: $basic-grey;
   }
 }
 

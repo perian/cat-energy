@@ -1,11 +1,20 @@
 .copyright__link {
-
   color: $special-dark-grey;
   text-decoration: none;
 
   @include font-size(16px, 18px);
+
+  &:active {
+    opacity: $opacity-active;
+  }
 }
 
 .copyright__logo {
   display: block;
+
+  fill: $special-grey-2;
+
+  &:hover {
+    fill: $basic-green;
+  }
 }

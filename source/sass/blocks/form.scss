@@ -75,7 +75,7 @@
       margin-bottom: 76px;
       padding: 30px 28px 28px;
 
-      border: 1px solid $special-grey;
+      border: 1px solid $basic-grey-4;
     }
 
     @media (min-width: $desktop-width) {
@@ -164,8 +164,8 @@
     }
 
     @media (min-width: $desktop-width) {
-      margin-bottom: 81px;
       align-items: center;
+      margin-bottom: 81px;
     }
   }
 }
@@ -288,11 +288,19 @@
       background-color: transparent;
       border: 1px solid $special-grey;
 
-
       @media (min-width: $tablet-width) {
         width: 40px;
         height: 40px;
       }
+    }
+
+    &:active {
+      opacity: $opacity-active;
+    }
+
+    &:hover::after,
+    &:active::after {
+      border-color: $basic-grey-5;
     }
   }
 
@@ -305,41 +313,12 @@
       width: 47%;
     }
 
-    &::after {
-      content: "";
-      position: absolute;
-      top: 16px;
-      right: 16px;
-
-      width: 18px;
-      height: 15px;
-
-      background-image: url("/img/icon-mail.svg");
-      background-repeat: no-repeat;
-
-      @media (min-width: $tablet-width) {
-        right: 18px;
-      }
-
-      @media (min-width: $desktop-width) {
-        right: 20px;
-      }
-    }
-
     &:not(:last-child) {
       margin-bottom: 14px;
 
       @media (min-width: $tablet-width) {
         margin-bottom: 20px;
       }
-    }
-  }
-
-  &--phone {
-    &::after {
-      height: 20px;
-
-      background-image: url("/img/icon-phone.svg");
     }
   }
 
@@ -372,13 +351,21 @@
       }
     }
 
-    &::after,
-    &::before {
-      content: "";
-      position: absolute;
+    &:active {
+      color: rgba($special-dark-grey-2, $opacity-active);
+    }
+
+    &:active::after {
+      opacity: $opacity-active;
+    }
+
+    &:hover::after {
+      border-color: $basic-grey-5;
     }
 
     &::after {
+      content: "";
+      position: absolute;
       left: 0;
 
       width: 30px;
@@ -399,17 +386,31 @@
 .form__input {
   height: 45px;
   margin-left: 12px;
-  padding: 12px 15px;
+  padding: 12px 45px 12px 15px;
 
   color: $special-dark-grey;
   text-transform: uppercase;
 
-  border: 1px solid $special-grey;
+  border: none;
+  outline: 1px solid $basic-grey-4;
 
   @media (min-width: $tablet-width) {
     height: 52px;
     margin-left: 18px;
-    padding: 10px 18px;
+    padding: 10px 50px 10px 18px;
+  }
+
+  &:hover {
+    outline-color: $special-grey;
+  }
+
+  &:focus {
+    outline: 2px solid $special-dark-grey;
+  }
+
+  &:focus ~ .form__icon-email,
+  &:focus ~ .form__icon-phone {
+    fill: $basic-green;
   }
 
   &--cat-data {
@@ -445,6 +446,47 @@
   }
 }
 
+.form__input--checkbox:checked + .form__label::before {
+  content: "";
+  position: absolute;
+  top: 11px;
+  left: 10px;
+
+  width: 18px;
+  height: 15px;
+
+  background-image: url("../../img/icon-tick.svg");
+  background-repeat: no-repeat;
+}
+
+.form__icon-email {
+  position: absolute;
+  top: 17px;
+  right: 16px;
+
+  @media (min-width: $tablet-width) {
+    top: 18px;
+    right: 17px;
+
+    width: 20px;
+    height: 14px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 21px;
+  }
+}
+
+.form__icon-phone {
+  position: absolute;
+  top: 14px;
+  right: 13px;
+
+  @media (min-width: $tablet-width) {
+    top: 16px;
+    right: 17px;
+  }
+}
 
 .form__food-type {
   display: flex;
@@ -488,6 +530,9 @@
   padding: 14px 13px;
 
   text-transform: uppercase;
+
+  border: none;
+  outline: 1px solid $basic-grey-4;
 
   @media (min-width: $tablet-width) {
     height: 175px;

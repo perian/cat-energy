@@ -25,6 +25,16 @@
 
 .socials__icon {
   display: block;
+  fill: $special-grey-2;
+
+  &:hover {
+    fill: $basic-green;
+  }
+
+  &:active {
+    fill: $basic-green;
+    opacity: $opacity-active;
+  }
 
   &--vk {
     width: 22px;

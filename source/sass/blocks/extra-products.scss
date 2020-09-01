@@ -156,20 +156,40 @@
     url("../../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center 64px, center;
-  background-size: 58px 62px, cover;
+  background-size: 56px 61px, cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/icon-gift.svg"),
+      url("../../img/gift-photo-mobile@2x.jpg");
+  }
 
   @media (min-width: $tablet-width) {
     min-height: 200px;
     padding-top: 72px;
+    background-size: 58px 64px, cover;
 
+    background-image: url("../../img/icon-gift.svg"),
+      url("../../img/gift-photo-tablet@1x.jpg");
     background-position: 89px 64px, center;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/icon-gift.svg"),
+        url("../../img/gift-photo-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: $desktop-width) {
     width: 20%;
     padding-top: 188px;
 
+    background-image: url("../../img/icon-gift.svg"),
+      url("../../img/gift-photo-desktop@1x.jpg");
     background-position: center 63px, center;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/icon-gift.svg"),
+        url("../../img/gift-photo-desktop@2x.jpg");
+    }
   }
 }
 

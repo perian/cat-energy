@@ -199,6 +199,25 @@
     @include font-size(20px, 30px);
   }
 
+  @media (min-width: $desktop-width) {
+    padding-right: 51px;
+  }
+
+  &:active {
+    opacity: $opacity-active;
+  }
+
+  &:hover,
+  &:active {
+    padding-right: 59px;
+  }
+
+  &:hover::after,
+  &:active::after {
+    width: 32px;
+    background-image: url("../../img/icon-right-arrow-verylong.svg");
+  }
+
   &::after {
     content: "";
     position: absolute;
