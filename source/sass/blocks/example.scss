@@ -4,7 +4,7 @@
   padding-bottom: 35px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 70px;
+    padding-bottom: 73px;
   }
 
   @media (min-width: $desktop-width) {
@@ -14,7 +14,6 @@
   &::before {
     content: "";
     position: absolute;
-    z-index: -1;
 
     width: 100%;
     height: 100%;
@@ -34,6 +33,9 @@
 }
 
 .example__wrapper {
+  position: relative;
+  z-index: 1;
+
   @media (min-width: $desktop-width) {
     display: flex;
   }
@@ -264,10 +266,16 @@
 
   @media (min-width: $tablet-width) {
     height: 510px;
+    margin-left: 7px;
+
+    object-fit: none;
   }
 
   @media (min-width: $desktop-width) {
     height: 517px;
+    margin-left: 0;
+
+    object-fit: cover;
   }
 
   &--after {
@@ -305,19 +313,25 @@
 
   text-transform: uppercase;
 
-  border: none;
   background-color: transparent;
+  border: none;
 
   @media (min-width: $tablet-width) {
     position: relative;
   }
 
   &:hover::after {
-    border-style: solid;
+    border-bottom-style: solid;
   }
 
   &:active::after {
-    border-style: none;
+    border-bottom-style: none;
+  }
+
+  &:focus-within {
+    outline: 1px solid black;
+
+    outline-radius: 2px;
   }
 
   &::after {
@@ -330,9 +344,7 @@
       width: 100%;
       height: 1px;
 
-      border: 1px dotted rgba($black, 0.4);
-      border-right: 0;
-      border-left: 0;
+      border-bottom: 1px dotted rgba($black, 0.4);
     }
   }
 }
