@@ -1,7 +1,7 @@
 .example {
   position: relative;
 
-  padding-bottom: 35px;
+  padding-bottom: 36px;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 70px;
@@ -343,6 +343,8 @@
   height: 14px;
   margin: 0 10px;
   padding: 3px 6px;
+
+  vertical-align: middle;
 
   background-color: $white;
   border: 1px solid $special-grey;
