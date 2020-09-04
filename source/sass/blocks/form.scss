@@ -424,16 +424,8 @@
     flex-grow: 1;
   }
 
-  &--radio {
-    display: none;
-  }
-
   &--user-data {
     flex-grow: 1;
-  }
-
-  &--checkbox {
-    display: none;
   }
 }
 
@@ -453,6 +445,11 @@
   }
 }
 
+.form__input--radio:focus + .form__label::after {
+  outline-style: auto;
+  outline-color: $special-dark-grey;
+}
+
 .form__input--checkbox:checked + .form__label--checkbox::before {
   content: "";
   position: absolute;
@@ -468,6 +465,11 @@
   @media (min-width: $tablet-width) {
     left: 10px;
   }
+}
+
+.form__input--checkbox:focus + .form__label::after {
+  outline-style: auto;
+  outline-color: $special-dark-grey;
 }
 
 .form__desc {
