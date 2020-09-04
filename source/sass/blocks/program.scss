@@ -207,15 +207,10 @@
     opacity: $opacity-active;
   }
 
+  &:focus,
   &:hover,
   &:active {
-    padding-right: 59px;
-  }
-
-  &:hover::after,
-  &:active::after {
-    width: 32px;
-    background-image: url("../../img/icon-right-arrow-verylong.svg");
+    padding-right: 48px;
   }
 
   &::after {
@@ -235,5 +230,12 @@
     @media (min-width: $tablet-width) {
       top: 9px;
     }
+  }
+
+  &:focus::after,
+  &:hover::after,
+  &:active::after {
+    width: 32px;
+    background-image: url("../../img/icon-right-arrow-verylong.svg");
   }
 }

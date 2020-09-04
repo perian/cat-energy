@@ -80,6 +80,14 @@
     color: $main-menu-active;
   }
 
+  &:focus {
+    color: $main-menu-hover;
+  }
+
+  &:not([href]):hover {
+    color: $black;
+  }
+
   &:not([href])::after {
     @media (min-width: $tablet-width) {
       content: "";

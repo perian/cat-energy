@@ -388,8 +388,8 @@
 }
 
 .form__input {
-  height: 45px;
   min-width: 100px;
+  height: 45px;
   padding: 12px 45px 12px 15px;
 
   color: $special-dark-grey;
@@ -453,17 +453,21 @@
   }
 }
 
-.form__input--checkbox:checked + .form__1::before {
+.form__input--checkbox:checked + .form__label--checkbox::before {
   content: "";
   position: absolute;
   top: 11px;
-  left: 10px;
+  left: 7px;
 
   width: 18px;
   height: 15px;
 
   background-image: url("../../img/icon-tick.svg");
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    left: 10px;
+  }
 }
 
 .form__desc {
@@ -553,6 +557,10 @@
   @media (min-width: $tablet-width) {
     height: 175px;
     padding: 15px 18px;
+  }
+
+  &::placeholder {
+    color: $special-dark-grey;
   }
 }
 
