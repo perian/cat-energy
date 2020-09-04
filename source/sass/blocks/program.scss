@@ -211,6 +211,14 @@
   &:hover,
   &:active {
     padding-right: 48px;
+
+    @media (min-width: $tablet-width) {
+      padding-right: 57px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-right: 59px;
+    }
   }
 
   &::after {
