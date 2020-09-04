@@ -24,11 +24,11 @@
     @media (min-width: $tablet-width) {
       bottom: 0;
 
-      height: 43%;
+      height: 459px;
     }
 
     @media (min-width: $desktop-width) {
-      height: 71%;
+      height: 469px;
     }
   }
 }
@@ -46,7 +46,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
-    margin-bottom: 42px;
+    margin-bottom: 51px;
   }
 
   @media (min-width: $desktop-width) {
@@ -233,26 +233,75 @@
   }
 }
 
-.example__image {
+.example__before-after {
   position: relative;
 
-  display: block;
-  height: 240px;
-  margin: 0 auto 34px;
-
-  text-align: center;
+  max-width: 280px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    max-width: 673px;
+    max-width: 708px;
+  }
+}
+
+.example__image {
+  display: block;
+  width: 280px;
+  height: 240px;
+  margin: 0 0 34px;
+
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
     height: 510px;
-    padding-top: 15px;
+    margin: 0 0 25px;
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 685px;
     height: 546px;
     margin-bottom: 10px;
-    padding-top: 0;
+  }
+}
+
+.example__image--before {
+  position: absolute;
+
+  width: 150px;
+
+  background-color: $basic-grey-3;
+  background-image: url("/img/before-mobile@1x.png");
+  background-position: -20px;
+
+  @media (min-width: $tablet-width) {
+    width: 354px;
+
+    background-image: url("/img/before-tablet@1x.png"),
+      linear-gradient(180deg, $white 172px, $basic-grey-3 172px);
+    background-position: 16px 0, 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 381px;
+
+    background-image: url("/img/before-desktop@1x.png"),
+      linear-gradient(180deg, $white 191px, $basic-grey-3 191px);
+  }
+}
+
+
+.example__image--after {
+  background-image: url("/img/after-mobile@1x.png");
+  background-position: -12px;
+
+  @media (min-width: $tablet-width) {
+    width: 666px;
+
+    background-image: url("/img/after-tablet@1x.png");
+    background-position: 16px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("/img/after-desktop@1x.png");
   }
 }
 
@@ -317,7 +366,7 @@
   }
 
   &:active::after {
-    border-style: none;
+    border-bottom-style: none;
   }
 
   &::after {
@@ -362,10 +411,12 @@
 }
 
 .example__scale {
+  display: block;
   width: 50%;
   height: 6px;
 
   background-color: $basic-green;
+  border: 0;
   border-radius: 6px;
 
   @media (min-width: $tablet-width) {
@@ -392,5 +443,10 @@
     @media (min-width: $tablet-width) {
       box-shadow: inset 0 0 0 1px $basic-green, inset 0 0 0 13px $white, 0 1px 6px 2px $special-grey;
     }
+  }
+
+  &:focus,
+  &:focus-within {
+    outline-style: auto;
   }
 }

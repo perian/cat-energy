@@ -206,61 +206,12 @@
           </div>
 
           <div class="example__before-after">
-            <div class="example__image">
-              <picture class="example__picture">
-                <source type="image/webp"
-                        media="(min-width: 1280px)"
-                        srcset="./img/before-desktop@2x.webp 1x,
-                                ./img/before-desktop@2x.webp 2x">
-                <source type="image/webp"
-                        media="(min-width: 768px)"
-                        srcset="./img/before-tablet@1x.webp 1x,
-                                ./img/before-tablet@2x.webp 2x">
-                <source type="image/webp"
-                        srcset="./img/before-tablet@1x.webp 1x,
-                                ./img/before-tablet@2x.webp 2x">
-
-                <source media="(min-width: 1280px)"
-                        srcset="./img/before-desktop@2x.png 1x,
-                                ./img/before-desktop@2x.png 2x">
-                <source media="(min-width: 768px)"
-                        srcset="./img/before-tablet@1x.png 1x,
-                                ./img/before-tablet@2x.png 2x">
-                <img class="example__img example__img--before"
-                      src="./img/before-mobile@1x.png"
-                      srcset="./img/before-mobile@2x.png 2x"
-                      alt="Кот до нашей программы">
-              </picture>
-
-              <picture class="example__picture">
-                <source type="image/webp"
-                        media="(min-width: 1280px)"
-                        srcset="./img/after-desktop@2x.webp 1x,
-                                ./img/after-desktop@2x.webp 2x">
-                <source type="image/webp"
-                        media="(min-width: 768px)"
-                        srcset="./img/after-tablet@1x.webp 1x,
-                                ./img/after-tablet@2x.webp 2x">
-                <source type="image/webp"
-                        srcset="./img/after-tablet@1x.webp 1x,
-                                ./img/after-tablet@2x.webp 2x">
-
-                <source media="(min-width: 1280px)"
-                        srcset="./img/after-desktop@2x.png 1x,
-                                ./img/after-desktop@2x.png 2x">
-                <source media="(min-width: 768px)"
-                        srcset="./img/after-tablet@1x.png 1x,
-                                ./img/after-tablet@2x.png 2x">
-                <img class="example__img example__img--after"
-                      src="./img/after-mobile@1x.png"
-                      srcset="./img/after-mobile@2x.png 2x"
-                      alt="Кот после нашей программы">
-              </picture>
-            </div>
+            <div class="example__image example__image--before"></div>
+            <div class="example__image example__image--after"></div>
             <div class="example__controls">
               <button class="example__button" type="button">Было</button>
               <div class="example__range">
-                <div class="example__scale"></div>
+                <button class="example__scale"></button>
               </div>
               <button class="example__button" type="button">Стало</button>
             </div>
