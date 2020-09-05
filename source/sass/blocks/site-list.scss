@@ -13,6 +13,7 @@
     flex-wrap: wrap;
     max-width: 71%;
     margin-left: auto;
+    padding-top: 17px;
 
     @include font-size(18px, 24px);
   }
@@ -26,6 +27,10 @@
 
 .site-list__item {
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 15px;
+  }
 
   &:not(:last-child) {
     @media (min-width: $tablet-width) {
@@ -71,6 +76,7 @@
   text-align: center;
   color: $black;
   text-decoration: none;
+  word-break: break-word;
 
   &:hover {
     color: $main-menu-hover;

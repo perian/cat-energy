@@ -453,7 +453,7 @@
 .form__input--checkbox:checked + .form__label--checkbox::before {
   content: "";
   position: absolute;
-  top: 11px;
+  top: 30%;
   left: 7px;
 
   width: 18px;

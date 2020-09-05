@@ -4,17 +4,16 @@
   padding-bottom: 36px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 70px;
+    padding-bottom: 74px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 33px;
+    padding-bottom: 23px;
   }
 
   &::before {
     content: "";
     position: absolute;
-    z-index: -1;
 
     width: 100%;
     height: 100%;
@@ -24,16 +23,18 @@
     @media (min-width: $tablet-width) {
       bottom: 0;
 
-      height: 459px;
+      max-height: 459px;
     }
 
     @media (min-width: $desktop-width) {
-      height: 469px;
+      max-height: 469px;
     }
   }
 }
 
 .example__wrapper {
+  position: relative;
+
   @media (min-width: $desktop-width) {
     display: flex;
   }
@@ -284,7 +285,7 @@
     width: 381px;
 
     background-image: url("/img/before-desktop@1x.png"),
-      linear-gradient(180deg, $white 191px, $basic-grey-3 191px);
+      linear-gradient(180deg, $white 181px, $basic-grey-3 181px);
   }
 }
 
@@ -354,19 +355,30 @@
 
   text-transform: uppercase;
 
-  border: none;
   background-color: transparent;
+  border: none;
 
   @media (min-width: $tablet-width) {
     position: relative;
   }
 
   &:hover::after {
-    border-style: solid;
+    border-bottom-style: solid;
   }
 
   &:active::after {
-    border-bottom-style: none;
+    height: 0;
+
+    border-bottom: none;
+  }
+
+  &:focus,
+  &:focus-within {
+    &::after {
+      height: 0;
+
+      border-bottom: none;
+    }
   }
 
   &::after {
@@ -379,9 +391,7 @@
       width: 100%;
       height: 1px;
 
-      border: 1px dotted rgba($black, 0.4);
-      border-right: 0;
-      border-left: 0;
+      border-bottom: 1px dotted rgba($black, 0.4);
     }
   }
 }
@@ -447,5 +457,6 @@
 
   &:focus {
     outline-style: auto;
+    box-shadow: inset 0 0 0 1px $basic-green, inset 0 0 0 13px $white, 0 1px 6px 2px $special-grey;
   }
 }
