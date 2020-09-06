@@ -420,6 +420,15 @@
     fill: $basic-green;
   }
 
+  &:invalid:focus {
+    outline-color: $status-error;
+  }
+
+  &:invalid:focus ~ .form__icon-email,
+  &:invalid:focus ~ .form__icon-phone {
+    fill: $status-error;
+  }
+
   &--cat-data {
     flex-grow: 1;
   }
