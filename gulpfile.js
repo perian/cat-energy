@@ -5,13 +5,27 @@ const sass = require("gulp-sass");
 const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const sync = require("browser-sync").create();
-const csso = require('gulp-csso');
-const webp = require('gulp-webp');
+const csso = require("gulp-csso");
+const webp = require("gulp-webp");
 const rename = require("gulp-rename");
 const imagemin = require("gulp-imagemin");
 const svgstore = require("gulp-svgstore");
 const htmlmin = require("gulp-htmlmin");
 const del = require("del");
+const uglify = require("gulp-uglify");
+const pipeline = require("readable-stream").pipeline;
+
+// Minifying JS
+
+const js = () => {
+  return gulp.src("source/js/**/*.js")
+    .pipe(uglify())
+    .pipe(rename({suffix: '.min'}))
+    .pipe(gulp.dest("build/js"))
+    .pipe(sync.stream());
+};
+
+exports.js = js;
 
 // Cleaning "build" folder before copying files into it
 
@@ -26,7 +40,6 @@ exports.clean = clean;
 const copy = () => {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
-    "source/js/**",
     "source/*.ico"
   ], {
     base: "source"
@@ -39,9 +52,9 @@ exports.copy = copy;
 // html min
 
 const html = () => {
-  return gulp.src('source/*.html')
+  return gulp.src("source/*.html")
     .pipe(htmlmin({ collapseWhitespace: true}))
-    .pipe(gulp.dest('build'))
+    .pipe(gulp.dest("build"))
     .pipe(sync.stream());
 };
 
@@ -101,22 +114,11 @@ exports.styles = styles;
 
 // Build
 
-// exports.build = gulp.series(
-//   clean,
-//   createWebp,
-//   images,
-//   copy,
-//   sprite,
-//   html,
-//   styles
-// );
-
-// Build
-
 const build = gulp.series(
   clean,
   createWebp,
   images,
+  js,
   copy,
   sprite,
   html,
@@ -130,7 +132,7 @@ exports.build = build;
 const server = (done) => {
   sync.init({
     server: {
-      baseDir: 'build'
+      baseDir: "build"
     },
     cors: true,
     notify: false,
@@ -146,6 +148,7 @@ exports.server = server;
 const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
   gulp.watch("source/*.html", gulp.series("html"));
+  gulp.watch("source/*.js", gulp.series("js"));
 }
 
 exports.default = gulp.series(

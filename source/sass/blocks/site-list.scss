@@ -121,6 +121,10 @@
   @media (min-width: $desktop-width) {
     color: $main-menu-alt;
 
+    &:not([href]):hover {
+      color: $main-menu-alt;
+    }
+
     &:not([href])::after {
       background-color: $white;
     }
