@@ -4,7 +4,7 @@
   background-color: $basic-grey;
 
   @media (min-width: $tablet-width) {
-    padding: 53px 0;
+    padding: 54px 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -21,7 +21,7 @@
 
 .page-footer__logo {
   @media (max-width: $mobile-width-only) {
-    padding: 40px 0 31px;
+    padding: 39px 0 31px;
 
     text-align: center;
   }
@@ -62,7 +62,7 @@
   align-items: center;
 
   @media (max-width: $mobile-width-only) {
-    padding: 22px 0;
+    padding: 21px 0;
   }
 
   @media (min-width: $tablet-width) {

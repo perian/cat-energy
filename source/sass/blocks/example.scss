@@ -27,7 +27,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      max-height: 469px;
+      max-height: 462px;
     }
   }
 }
@@ -260,7 +260,7 @@
 
   @media (min-width: $desktop-width) {
     height: 546px;
-    margin-bottom: 10px;
+    margin: 0 0 8px;
   }
 }
 
@@ -285,10 +285,9 @@
     width: 381px;
 
     background-image: url("/img/before-desktop@1x.png"),
-      linear-gradient(180deg, $white 181px, $basic-grey-3 181px);
+      linear-gradient(180deg, $white 188px, $basic-grey-3 188px);
   }
 }
-
 
 .example__image--after {
   background-image: url("/img/after-mobile@1x.png");

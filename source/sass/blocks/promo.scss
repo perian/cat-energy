@@ -122,8 +122,8 @@
   @include font-size(14px);
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 49px 88px;
     max-width: 417px;
+    margin: 0 0 49px 88px;
 
     @include font-size(20px);
   }

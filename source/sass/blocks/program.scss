@@ -244,6 +244,7 @@
   &:hover::after,
   &:active::after {
     width: 32px;
+
     background-image: url("../../img/icon-right-arrow-verylong.svg");
   }
 }
