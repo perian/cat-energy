@@ -7,6 +7,10 @@
   &:active {
     opacity: $opacity-active;
   }
+
+  &:focus .copyright__logo {
+    fill: $basic-green;
+  }
 }
 
 .copyright__logo {

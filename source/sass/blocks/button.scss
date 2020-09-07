@@ -29,6 +29,10 @@
     background-color: $btn-hover;
   }
 
+  &:focus {
+    background-color: $btn-hover;
+  }
+
   &--grey {
     color: $special-dark-grey;
 
@@ -38,8 +42,13 @@
       background-color: $basic-grey-2;
     }
 
+    &:focus {
+      background-color: $basic-grey-2;
+    }
+
     &:active {
       color: rgba($special-dark-grey, $opacity-active);
+
       background-color: $basic-grey-2;
     }
   }

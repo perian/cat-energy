@@ -23,8 +23,15 @@
   }
 }
 
+.socials__link {
+  &:focus .socials__icon {
+    fill: $basic-green;
+  }
+}
+
 .socials__icon {
   display: block;
+
   fill: $special-grey-2;
 
   &:hover {
@@ -32,8 +39,14 @@
   }
 
   &:active {
-    fill: $basic-green;
     opacity: $opacity-active;
+
+    fill: $basic-green;
+  }
+
+  &:focus,
+  &:focus-within {
+    fill: $basic-green;
   }
 
   &--vk {

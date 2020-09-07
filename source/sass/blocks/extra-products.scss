@@ -28,6 +28,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin: 0 0 79px;
     padding-left: 0;
   }
 }
@@ -89,7 +90,10 @@
   }
 
   @media (min-width: $desktop-width) {
+    max-width: 170px;
     margin-bottom: 0;
+
+    word-break: break-word;
   }
 }
 
@@ -109,7 +113,7 @@
 
   @media (min-width: $desktop-width) {
     width: 31.7%;
-    margin: 0 5% 0 0;
+    margin: 0 44px 0 0;
   }
 }
 
@@ -149,9 +153,9 @@
 
 .extra-products__gift {
   min-height: 289px;
-  padding-top: 188px;
+  padding: 188px 0 40px;
 
-  background-color: $basic-grey;
+  background-color: $basic-green;
   background-image: url("../../img/icon-gift.svg"),
     url("../../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
@@ -165,12 +169,12 @@
 
   @media (min-width: $tablet-width) {
     min-height: 200px;
-    padding-top: 72px;
-    background-size: 58px 64px, cover;
+    padding: 72px 0 40px;
 
     background-image: url("../../img/icon-gift.svg"),
       url("../../img/gift-photo-tablet@1x.jpg");
     background-position: 89px 64px, center;
+    background-size: 58px 64px, cover;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../../img/icon-gift.svg"),
@@ -180,7 +184,7 @@
 
   @media (min-width: $desktop-width) {
     width: 20%;
-    padding-top: 188px;
+    padding: 188px 0 40px;
 
     background-image: url("../../img/icon-gift.svg"),
       url("../../img/gift-photo-desktop@1x.jpg");

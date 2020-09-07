@@ -101,7 +101,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 auto 25px;
+    margin: 0 auto 23px;
 
     @include font-size(20px, 21px);
   }
@@ -139,8 +139,8 @@
 
 .products-list__img {
   display: block;
-  margin: auto;
   width: auto;
+  margin: auto;
 
   @media (max-width: $mobile-width-only) {
     width: 140px;

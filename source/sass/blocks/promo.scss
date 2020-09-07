@@ -62,8 +62,9 @@
 
       background-color: $special-green;
       background-image: url("../../img/index-background-desktop@1x.jpg");
-      background-positiotn: left top;
       background-size: auto;
+
+      background-positiotn: left top;
 
       @media (min-resolution: 2dppx) {
         background-image: url("../../img/index-background-desktop@2x.jpg");
@@ -91,11 +92,12 @@
   }
 }
 
-.promo .promo__title {
+.promo__title {
   width: 250px;
   margin: 0 auto 25px;
 
   font-weight: 400;
+  word-break: break-word;
 
   @media (max-width: $mobile-width-only) {
     @include font-size(36px);
@@ -120,6 +122,7 @@
   @include font-size(14px);
 
   @media (min-width: $tablet-width) {
+    max-width: 417px;
     margin: 0 0 49px 88px;
 
     @include font-size(20px);
@@ -148,7 +151,7 @@
 
     max-width: 552px;
     height: 499px;
-    margin: 0 auto 0 -10px;
+    margin: 0 auto;
   }
 }
 

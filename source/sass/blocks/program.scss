@@ -2,7 +2,7 @@
   display: grid;
   margin-bottom: 26px;
 
-  grid-row-gap: 20px;
+  grid-row-gap: 19px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 45px;
@@ -207,15 +207,18 @@
     opacity: $opacity-active;
   }
 
+  &:focus,
   &:hover,
   &:active {
-    padding-right: 59px;
-  }
+    padding-right: 48px;
 
-  &:hover::after,
-  &:active::after {
-    width: 32px;
-    background-image: url("../../img/icon-right-arrow-verylong.svg");
+    @media (min-width: $tablet-width) {
+      padding-right: 57px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-right: 59px;
+    }
   }
 
   &::after {
@@ -235,5 +238,13 @@
     @media (min-width: $tablet-width) {
       top: 9px;
     }
+  }
+
+  &:focus::after,
+  &:hover::after,
+  &:active::after {
+    width: 32px;
+
+    background-image: url("../../img/icon-right-arrow-verylong.svg");
   }
 }
