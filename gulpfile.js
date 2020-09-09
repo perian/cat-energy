@@ -67,7 +67,7 @@ const sprite = () => {
   .pipe(svgstore())
   .pipe(rename("sprite.svg"))
   .pipe(gulp.dest("build/img"))
-}
+};
 
 // Convert images to webp format
 
@@ -75,7 +75,7 @@ const createWebp = () => {
   return gulp.src("source/img/**/*.{png,jpg}")
   .pipe(webp({quality: 90}))
   .pipe(gulp.dest("build/img"))
-}
+};
 
 exports.createWebp = createWebp;
 
@@ -89,7 +89,7 @@ const images = () => {
     imagemin.svgo()
   ]))
   .pipe(gulp.dest("build/img"))
-}
+};
 
 exports.images = images;
 
@@ -108,7 +108,7 @@ const styles = () => {
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
     .pipe(sync.stream());
-}
+};
 
 exports.styles = styles;
 
@@ -139,7 +139,7 @@ const server = (done) => {
     ui: false,
   });
   done();
-}
+};
 
 exports.server = server;
 
@@ -149,7 +149,7 @@ const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
   gulp.watch("source/*.html", gulp.series("html"));
   gulp.watch("source/*.js", gulp.series("js"));
-}
+};
 
 exports.default = gulp.series(
   build, server, watcher

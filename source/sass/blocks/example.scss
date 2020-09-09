@@ -270,13 +270,13 @@
   width: 150px;
 
   background-color: $basic-grey-3;
-  background-image: url("/img/before-mobile@1x.png");
+  background-image: url("../img/before-mobile@1x.png");
   background-position: -20px;
 
   @media (min-width: $tablet-width) {
     width: 354px;
 
-    background-image: url("/img/before-tablet@1x.png"),
+    background-image: url("../img/before-tablet@1x.png"),
       linear-gradient(180deg, $white 172px, $basic-grey-3 172px);
     background-position: 16px 0, 0;
   }
@@ -284,24 +284,24 @@
   @media (min-width: $desktop-width) {
     width: 381px;
 
-    background-image: url("/img/before-desktop@1x.png"),
+    background-image: url("../img/before-desktop@1x.png"),
       linear-gradient(180deg, $white 188px, $basic-grey-3 188px);
   }
 }
 
 .example__image--after {
-  background-image: url("/img/after-mobile@1x.png");
+  background-image: url("../img/after-mobile@1x.png");
   background-position: -12px;
 
   @media (min-width: $tablet-width) {
     width: 666px;
 
-    background-image: url("/img/after-tablet@1x.png");
+    background-image: url("../img/after-tablet@1x.png");
     background-position: 16px 0;
   }
 
   @media (min-width: $desktop-width) {
-    background-image: url("/img/after-desktop@1x.png");
+    background-image: url("../img/after-desktop@1x.png");
   }
 }
 

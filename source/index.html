@@ -4,8 +4,8 @@
     <title>Cat energy</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="preload" href="/fonts/oswaldregular.woff2" as="font">
-    <link rel="preload" href="/fonts/oswaldmedium.woff2" as="font">
+    <link rel="preload" href="./fonts/oswaldregular.woff2" as="font">
+    <link rel="preload" href="./fonts/oswaldmedium.woff2" as="font">
     <link rel="stylesheet" href="./css/style.min.css">
   </head>
   <body class="page-body">
@@ -30,9 +30,10 @@
 
     <header class="page-header page-header--absolute">
       <div class="wrapper">
-        <!--  main-nav--opened - открывает меню на мобильном, добавляет закрывающую кнопку
-              main-nav--closed - скрывает меню на мобильном, добавляет кнопку-бургер
-              main-nav--nojs - без JS меню открыто, кнопки скрыты -->
+        <!--  Модификаторы класса main-nav:
+              opened - открывает меню на мобильном, добавляет закрывающую кнопку
+              closed - скрывает меню на мобильном, добавляет кнопку-бургер
+              nojs - без JS меню открыто, кнопки скрыты -->
         <nav class="main-nav main-nav--opened main-nav--nojs">
           <button class="main-nav__toggle" type="button" name="close-button">
             <span class="visually-hidden">Открыть меню</span>
@@ -101,7 +102,7 @@
 
       <div class="wrapper">
         <section class="program">
-          <section class="program__item">
+          <article class="program__item">
             <div class="program__icon program__icon--slim"></div>
             <h2 class="program__title">
               Похудение
@@ -113,9 +114,9 @@
             <a class="program__link" href="catalog-slim.html">
               Каталог slim
             </a>
-          </section>
+          </article>
 
-          <section class="program__item">
+          <article class="program__item">
             <div class="program__icon program__icon--pro"></div>
             <h2 class="program__title">
               Набор массы
@@ -127,7 +128,7 @@
             <a class="program__link" href="catalog-pro.html">
               Каталог pro
           </a>
-          </section>
+          </article>
         </section>
       </div>
 
@@ -201,6 +202,7 @@
       </section>
 
       <section class="contacts">
+        <h2 class="visually-hidden">Контакты</h2>
         <div class="wrapper">
           <div class="contacts__container">
             <p class="contacts__invitation">
@@ -264,6 +266,6 @@
         </div>
       </div>
     </footer>
-    <script src="js/main-menu.min.js"></script>
+    <script src="./js/main-menu.min.js"></script>
   </body>
 </html>
