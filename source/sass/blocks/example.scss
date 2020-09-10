@@ -456,6 +456,9 @@
 
   &:focus {
     outline-style: auto;
-    box-shadow: inset 0 0 0 1px $basic-green, inset 0 0 0 13px $white, 0 1px 6px 2px $special-grey;
+    
+    @media (min-width: $tablet-width) {
+      box-shadow: inset 0 0 0 1px $basic-green, inset 0 0 0 13px $white, 0 1px 6px 2px $special-grey;
+    }
   }
 }

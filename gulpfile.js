@@ -20,7 +20,7 @@ const pipeline = require("readable-stream").pipeline;
 const js = () => {
   return gulp.src("source/js/**/*.js")
     .pipe(uglify())
-    .pipe(rename({suffix: '.min'}))
+    .pipe(rename({suffix: ".min"}))
     .pipe(gulp.dest("build/js"))
     .pipe(sync.stream());
 };
