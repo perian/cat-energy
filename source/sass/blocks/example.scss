@@ -23,11 +23,11 @@
     @media (min-width: $tablet-width) {
       bottom: 0;
 
-      max-height: 459px;
+      max-height: 462px;
     }
 
     @media (min-width: $desktop-width) {
-      max-height: 462px;
+      background-color: $basic-grey;
     }
   }
 }
@@ -179,7 +179,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    background-color: $basic-grey-3;
+    background-color: $basic-grey;
   }
 }
 
@@ -277,7 +277,7 @@
     width: 354px;
 
     background-image: url("../img/before-tablet@1x.png"),
-      linear-gradient(180deg, $white 172px, $basic-grey-3 172px);
+      linear-gradient(180deg, $white 170px, $basic-grey-3 170px);
     background-position: 16px 0, 0;
   }
 
@@ -285,7 +285,7 @@
     width: 381px;
 
     background-image: url("../img/before-desktop@1x.png"),
-      linear-gradient(180deg, $white 188px, $basic-grey-3 188px);
+      linear-gradient(180deg, $white 188px, $basic-grey 188px);
   }
 }
 
@@ -296,12 +296,14 @@
   @media (min-width: $tablet-width) {
     width: 666px;
 
-    background-image: url("../img/after-tablet@1x.png");
+    background-image: url("../img/after-tablet@1x.png"),
+      linear-gradient(180deg, $white 170px, $basic-grey-3 170px);
     background-position: 16px 0;
   }
 
   @media (min-width: $desktop-width) {
-    background-image: url("../img/after-desktop@1x.png");
+    background-image: url("../img/after-desktop@1x.png"),
+      linear-gradient(180deg, $white 188px, $basic-grey 188px);
   }
 }
 
