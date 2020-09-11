@@ -64,10 +64,13 @@ exports.html = html;
 
 const sprite = () => {
   return gulp.src("source/img/**/icon-*.svg")
-  .pipe(svgstore())
-  .pipe(rename("sprite.svg"))
-  .pipe(gulp.dest("build/img"))
-};
+    .pipe(svgstore({
+      inlineSvg: true
+    }))
+    .pipe(rename("sprite.svg"))
+    .pipe(gulp.dest("build/img"))
+}
+exports.sprite = sprite;
 
 // Convert images to webp format
 
