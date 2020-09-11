@@ -39,6 +39,11 @@
   width: auto;
   height: auto;
 
+  @media (min-width: $tablet-width) {
+    width: 128px;
+    height: 24px;
+  }
+
   &:hover {
     opacity: 0.8;
   }
@@ -54,16 +59,5 @@
   &:not([href]):hover,
   &:not([href]):active {
     opacity: 1;
-  }
-}
-
-.main-logo__image {
-  display: block;
-  padding: 0;
-
-  &--center {
-    @media (max-width: $mobile-width-only) {
-      margin: 0 auto;
-    }
   }
 }
