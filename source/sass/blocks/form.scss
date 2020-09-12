@@ -463,6 +463,15 @@
   outline-color: $special-dark-grey;
 }
 
+.form__input--radio:focus:active + .form__label {
+  opacity: $opacity-active;
+}
+
+.form__input--radio:disabled + .form__label {
+  opacity: 0.3;
+  user-select: none;
+}
+
 .form__input--checkbox:checked + .form__label--checkbox::before {
   content: "";
   position: absolute;
@@ -483,6 +492,18 @@
 .form__input--checkbox:focus + .form__label::after {
   outline-style: auto;
   outline-color: $special-dark-grey;
+}
+
+.form__input--checkbox:focus:active + .form__label {
+  opacity: 0.3;
+  user-select: none;
+  color: $special-dark-grey-2
+}
+
+.form__input--checkbox:disabled + .form__label {
+  opacity: 0.3;
+  user-select: none;
+  color: $special-dark-grey-2
 }
 
 .form__desc {
