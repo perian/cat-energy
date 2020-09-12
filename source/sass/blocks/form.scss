@@ -497,13 +497,13 @@
 .form__input--checkbox:focus:active + .form__label {
   opacity: 0.3;
   user-select: none;
-  color: $special-dark-grey-2
+  color: $special-dark-grey-2;
 }
 
 .form__input--checkbox:disabled + .form__label {
   opacity: 0.3;
   user-select: none;
-  color: $special-dark-grey-2
+  color: $special-dark-grey-2;
 }
 
 .form__desc {
