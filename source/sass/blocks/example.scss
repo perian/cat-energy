@@ -4,7 +4,7 @@
   padding-bottom: 36px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 74px;
+    padding-bottom: 71px;
   }
 
   @media (min-width: $desktop-width) {
@@ -42,12 +42,13 @@
 
 .example__container {
   margin-bottom: 33px;
-  padding-top: 29px;
+  padding-top: 27px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
     margin-bottom: 51px;
+    padding-top: 29px;
   }
 
   @media (min-width: $desktop-width) {
@@ -56,7 +57,11 @@
 }
 
 .example__title {
-  margin: 0 0 35px;
+  margin: 0 0 33px;
+
+  @media (max-width: $mobile-width-only) {
+    line-height: 40px;
+  }
 
   @media (min-width: $tablet-width) {
     margin: 0 0 64px;
@@ -249,18 +254,18 @@
   display: block;
   width: 280px;
   height: 240px;
-  margin: 0 0 34px;
+  margin: 0 0 32px;
 
   background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
     height: 510px;
-    margin: 0 0 25px;
+    margin: 0 0 21px;
   }
 
   @media (min-width: $desktop-width) {
     height: 546px;
-    margin: 0 0 8px;
+    margin: 0 0 5px;
   }
 }
 
@@ -354,6 +359,7 @@
   margin: 0;
   padding: 0;
 
+  line-height: 20px;
   text-transform: uppercase;
 
   background-color: transparent;
@@ -361,6 +367,8 @@
 
   @media (min-width: $tablet-width) {
     position: relative;
+
+    line-height: 30px;
   }
 
   &:hover::after {
@@ -386,7 +394,7 @@
     @media (min-width: $tablet-width) {
       content: "";
       position: absolute;
-      bottom: -6px;
+      bottom: -2px;
       left: 0;
 
       width: 100%;

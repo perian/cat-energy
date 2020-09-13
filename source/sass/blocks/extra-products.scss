@@ -16,6 +16,8 @@
 }
 
 .extra-products__title {
+  position: relative;
+
   margin: 0 0 34px;
 
   @include font-size(24px);
@@ -30,6 +32,37 @@
   @media (min-width: $desktop-width) {
     margin: 0 0 81px;
     padding-left: 0;
+  }
+
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    top: 16px;
+
+    height: 2px;
+
+    background-color: $basic-green;
+
+    @media (min-width: $tablet-width) {
+      top: 22px;
+    }
+  }
+
+  &::after {
+    right: -1840px;
+
+    width: 1800px;
+
+    @media (max-width: $mobile-width-only) {
+      right: -1822px;
+    }
+  }
+
+  &::before {
+    left: -1500px;
+
+    width: 1460px;
   }
 }
 
