@@ -7,6 +7,7 @@
 }
 
 .main-nav__toggle {
+  display: none;
   position: absolute;
   top: 9px;
   right: -13px;
@@ -65,9 +66,9 @@
   }
 }
 
-.main-nav--nojs .main-nav__toggle {
+.main-nav--js .main-nav__toggle {
   @media (max-width: $mobile-width-only) {
-    display: none;
+    display: block;
   }
 }
 
