@@ -17,7 +17,8 @@
 
 .extra-products__title {
   position: relative;
-
+  display: inline-block;
+  vertical-align: middle;
   margin: 0 0 34px;
 
   @include font-size(24px);
@@ -38,7 +39,7 @@
   &::before {
     content: "";
     position: absolute;
-    top: 16px;
+    top: 15px;
 
     height: 2px;
 
@@ -50,12 +51,12 @@
   }
 
   &::after {
-    right: -1840px;
+    right: -1822px;
 
     width: 1800px;
 
-    @media (max-width: $mobile-width-only) {
-      right: -1822px;
+    @media (min-width: $tablet-width) {
+      right: -1835px;
     }
   }
 
@@ -63,6 +64,14 @@
     left: -1500px;
 
     width: 1460px;
+
+    @media (min-width: $tablet-width) {
+      left: -1460px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: -1500px;
+    }
   }
 }
 
