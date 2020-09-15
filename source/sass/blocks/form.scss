@@ -263,6 +263,8 @@
 
     color: $special-dark-grey-2;
 
+    cursor: pointer;
+
     @media (min-width: $tablet-width) {
       padding-left: 60px;
     }
@@ -333,6 +335,8 @@
     padding-left: 46px;
 
     color: $special-dark-grey-2;
+
+    cursor: pointer;
 
     @media (min-width: $tablet-width) {
       width: 39%;
@@ -637,6 +641,7 @@
   padding: 10px 0;
 
   border: none;
+  cursor: pointer;
 
   @media (max-width: $mobile-width-only) {
     margin-bottom: 22px;
