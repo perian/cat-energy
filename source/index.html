@@ -14,7 +14,7 @@
         <!--  Модификаторы класса main-nav:
               opened - открывает меню на мобильном, добавляет закрывающую кнопку
               closed - скрывает меню на мобильном, добавляет кнопку-бургер
-              nojs - без JS меню открыто, кнопки скрыты -->
+              js - скрывает меню, показывает кнопку открытия/закрытия меню. Без JS меню открыто, кнопки скрыты -->
         <nav class="main-nav main-nav--opened">
           <button class="main-nav__toggle" type="button" name="close-button">
             <span class="visually-hidden">Открыть меню</span>
@@ -165,8 +165,54 @@
           </div>
 
           <div class="example__before-after">
-            <div class="example__image example__image--before"></div>
-            <div class="example__image example__image--after"></div>
+            <picture class="example__cat example__cat--before">
+              <source type="image/webp"
+                      media="(min-width: 1440px)"
+                      srcset="./img/before-desktop@1x.webp 1x,
+                              ./img/before-desktop@2x.webp 2x">
+              <source type="image/webp"
+                      media="(min-width: 768px)"
+                      srcset="./img/before-tablet@1x.webp 1x,
+                              ./img/before-tablet@2x.webp 2x">
+              <source type="image/webp"
+                      srcset="./img/before-mobile@1x.webp 1x,
+                              ./img/before-mobile@2x.webp 2x">
+
+              <source media="(min-width: 1440px)"
+                      srcset="./img/before-desktop@1x.png 1x,
+                              ./img/before-desktop@2x.png 2x">
+              <source media="(min-width: 768px)"
+                      srcset="./img/before-tablet@1x.png 1x,
+                              ./img/before-tablet@2x.png 2x">
+              <img class="example__img"
+                    src="./img/before-mobile@1x.png"
+                    srcset="./img/before-mobile@2x.png 2x"
+                    alt="Так выглядит кот до нашей программы питания.">
+            </picture>
+            <picture class="example__cat example__cat--after">
+              <source type="image/webp"
+                      media="(min-width: 1440px)"
+                      srcset="./img/after-desktop@1x.webp 1x,
+                              ./img/after-desktop@2x.webp 2x">
+              <source type="image/webp"
+                      media="(min-width: 768px)"
+                      srcset="./img/after-tablet@1x.webp 1x,
+                              ./img/after-tablet@2x.webp 2x">
+              <source type="image/webp"
+                      srcset="./img/after-mobile@1x.webp 1x,
+                              ./img/after-mobile@2x.webp 2x">
+
+              <source media="(min-width: 1440px)"
+                      srcset="./img/after-desktop@1x.png 1x,
+                              ./img/after-desktop@2x.png 2x">
+              <source media="(min-width: 768px)"
+                      srcset="./img/after-tablet@1x.png 1x,
+                              ./img/after-tablet@2x.png 2x">
+              <img class="example__img example__img--after"
+                    src="./img/after-mobile@1x.png"
+                    srcset="./img/after-mobile@2x.png 2x"
+                    alt="А так выглядит кот после нашей программы питания.">
+            </picture>
             <div class="example__controls">
               <button class="example__button" type="button" aria-label="Показывает состояние кота до нашей программы.">
                 Было
