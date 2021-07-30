@@ -20,12 +20,12 @@
     opacity: 0.8;
   }
 
-  &:active {
-    opacity: 0.6;
-  }
-
   &:focus {
     opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
   }
 
   &:not([href]):hover,
@@ -39,7 +39,16 @@
   width: auto;
   height: auto;
 
+  @media (min-width: $tablet-width) {
+    width: 128px;
+    height: 24px;
+  }
+
   &:hover {
+    opacity: 0.8;
+  }
+
+  &:focus {
     opacity: 0.8;
   }
 
@@ -47,22 +56,8 @@
     opacity: 0.6;
   }
 
-  &:focus {
-    opacity: 0.8;
-  }
-
   &:not([href]):hover,
   &:not([href]):active {
     opacity: 1;
-  }
-}
-
-.main-logo__image {
-  display: block;
-
-  &--center {
-    @media (max-width: $mobile-width-only) {
-      margin: 0 auto;
-    }
   }
 }
