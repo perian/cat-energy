@@ -5,7 +5,7 @@
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.0.0",
     "autoprefixer": "9.8.4",
-    "browser-sync": "^2.26.10",
+    "browser-sync": "^2.27.5",
     "del": "^5.1.0",
     "gulp": "^4.0.2",
     "gulp-csso": "^4.0.1",
@@ -14,7 +14,7 @@
     "gulp-plumber": "1.2.1",
     "gulp-postcss": "^8.0.0",
     "gulp-rename": "^2.0.0",
-    "gulp-sass": "4.1.0",
+    "gulp-sass": "^5.0.0",
     "gulp-sourcemaps": "2.6.5",
     "gulp-svgstore": "^7.0.1",
     "gulp-uglify": "^3.0.2",
@@ -46,5 +46,9 @@
   "engines": {
     "node": "12.18.2"
   },
-  "dependencies": {}
+  "dependencies": {
+    "trim-newlines": ">=3.0.1",
+    "merge": ">=2.1.1",
+    "glob-parent": ">=5.1.2"
+  }
 }
