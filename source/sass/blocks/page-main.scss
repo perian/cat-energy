@@ -12,16 +12,16 @@
       padding-top: 73px;
     }
   }
+}
 
-  &__title {
-    margin: 0 0 37px;
+.page-main__title {
+  margin: 0 0 37px;
 
-    @media (min-width: $tablet-width) {
-      margin: 0 0 55px;
-    }
+  @media (min-width: $tablet-width) {
+    margin: 0 0 55px;
+  }
 
-    @media (min-width: $desktop-width) {
-      margin: 0 0 57px;
-    }
+  @media (min-width: $desktop-width) {
+    margin: 0 0 57px;
   }
 }
