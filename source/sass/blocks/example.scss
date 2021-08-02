@@ -4,7 +4,7 @@
   padding-bottom: 36px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 74px;
+    padding-bottom: 71px;
   }
 
   @media (min-width: $desktop-width) {
@@ -23,11 +23,15 @@
     @media (min-width: $tablet-width) {
       bottom: 0;
 
-      max-height: 459px;
+      max-height: 462px;
     }
 
     @media (min-width: $desktop-width) {
-      max-height: 462px;
+      top: 189px;
+
+      max-height: 100%;
+
+      background-color: $basic-grey;
     }
   }
 }
@@ -42,21 +46,27 @@
 
 .example__container {
   margin-bottom: 33px;
-  padding-top: 29px;
+  padding-top: 27px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
     margin-bottom: 51px;
+    padding-top: 29px;
   }
 
   @media (min-width: $desktop-width) {
+    max-width: 40%;
     padding-top: 53px;
   }
 }
 
 .example__title {
-  margin: 0 0 35px;
+  margin: 0 0 33px;
+
+  @media (max-width: $mobile-width-only) {
+    line-height: 40px;
+  }
 
   @media (min-width: $tablet-width) {
     margin: 0 0 64px;
@@ -179,7 +189,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    background-color: $basic-grey-3;
+    background-color: $basic-grey;
   }
 }
 
@@ -237,90 +247,88 @@
 .example__before-after {
   position: relative;
 
+  display: flex;
+  flex-wrap: wrap;
   max-width: 280px;
+  min-height: 292px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    max-width: 708px;
-  }
-}
-
-.example__image {
-  display: block;
-  width: 280px;
-  height: 240px;
-  margin: 0 0 34px;
-
-  background-repeat: no-repeat;
-
-  @media (min-width: $tablet-width) {
-    height: 510px;
-    margin: 0 0 25px;
+    max-width: 682px;
+    min-height: 561px;
   }
 
   @media (min-width: $desktop-width) {
-    height: 546px;
-    margin: 0 0 8px;
-  }
-}
-
-.example__image--before {
-  position: absolute;
-
-  width: 150px;
-
-  background-color: $basic-grey-3;
-  background-image: url("/img/before-mobile@1x.png");
-  background-position: -20px;
-
-  @media (min-width: $tablet-width) {
-    width: 354px;
-
-    background-image: url("/img/before-tablet@1x.png"),
-      linear-gradient(180deg, $white 172px, $basic-grey-3 172px);
-    background-position: 16px 0, 0;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 381px;
-
-    background-image: url("/img/before-desktop@1x.png"),
-      linear-gradient(180deg, $white 188px, $basic-grey-3 188px);
-  }
-}
-
-.example__image--after {
-  background-image: url("/img/after-mobile@1x.png");
-  background-position: -12px;
-
-  @media (min-width: $tablet-width) {
-    width: 666px;
-
-    background-image: url("/img/after-tablet@1x.png");
-    background-position: 16px 0;
-  }
-
-  @media (min-width: $desktop-width) {
-    background-image: url("/img/after-desktop@1x.png");
+    max-width: 60%;
+    margin: 0 0 0 auto;
   }
 }
 
 .example__img {
-  width: auto;
+  width: 280px;
+  max-width: unset;
   height: 240px;
 
   object-fit: cover;
 
   @media (min-width: $tablet-width) {
-    height: 510px;
+    width: 700px;
+    height: 517px;
+
+    object-fit: unset;
+  }
+}
+
+.example__img--after {
+  @media (min-width: $tablet-width) {
+    width: 665px;
   }
 
   @media (min-width: $desktop-width) {
-    height: 517px;
+    width: 610px;
+
+    object-fit: cover;
+  }
+}
+
+.example__cat {
+  position: absolute;
+
+  display: block;
+  overflow: hidden;
+
+  @media (min-width: $desktop-width) {
+    bottom: 106px;
+  }
+}
+
+.example__cat--before {
+  left: 0;
+
+  width: 140px;
+
+  @media (min-width: $tablet-width) {
+    width: 341px;
   }
 
-  &--after {
-    display: none;
+  @media (min-width: $desktop-width) {
+    width: 367px;
+  }
+}
+
+.example__cat--after {
+  right: 0;
+
+  width: 140px;
+
+  direction: rtl;
+
+  @media (min-width: $tablet-width) {
+    width: 341px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 285px;
   }
 }
 
@@ -329,7 +337,7 @@
   justify-content: space-between;
   align-items: center;
   width: 196px;
-  margin: 0 auto;
+  margin: auto auto 0;
 
   color: $black;
   text-transform: uppercase;
@@ -344,14 +352,16 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 0 0 auto;
+    margin: auto 0 46px 82px;
   }
 }
 
 .example__button {
   margin: 0;
   padding: 0;
+  cursor: pointer;
 
+  line-height: 20px;
   text-transform: uppercase;
 
   background-color: transparent;
@@ -359,6 +369,8 @@
 
   @media (min-width: $tablet-width) {
     position: relative;
+
+    line-height: 30px;
   }
 
   &:hover::after {
@@ -384,7 +396,7 @@
     @media (min-width: $tablet-width) {
       content: "";
       position: absolute;
-      bottom: -6px;
+      bottom: -2px;
       left: 0;
 
       width: 100%;
@@ -456,6 +468,9 @@
 
   &:focus {
     outline-style: auto;
-    box-shadow: inset 0 0 0 1px $basic-green, inset 0 0 0 13px $white, 0 1px 6px 2px $special-grey;
+
+    @media (min-width: $tablet-width) {
+      box-shadow: inset 0 0 0 1px $basic-green, inset 0 0 0 13px $white, 0 1px 6px 2px $special-grey;
+    }
   }
 }
