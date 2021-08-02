@@ -44,7 +44,7 @@
     "source/sass/**/*.scss"
   ],
   "engines": {
-    "node": "12.x"
+    "node": "14.x"
   },
   "dependencies": {
     "browserlist": "^1.0.1",
